@@ -1,0 +1,13 @@
+---
+layout: core
+---
+{% for post in site.experience  %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <span class="post-date mb-2 d-block">{{ post.date | date: "%B %d, %Y" }}</span>
+    {% if post.content.size > 100 %}
+        {{ post.content | truncatewords:  50}} <!-- bad! content gives you rendered html and you will truncate in the middle of a node -->
+        <h4 class="fz-12"><a href="{{ post.url }}">read more</a></h4>
+    {% else %}
+        {{ post.content }}
+    {% endif %}
+{% endfor %}

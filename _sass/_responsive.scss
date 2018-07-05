@@ -1,0 +1,18 @@
+// Media Breakpoint Widths --  Added by John 8/16/2017
+$mobile: 576px;
+$tabby: 768px;
+$desktop: 992px;
+$large: 1200px;
+
+$breakpoints: (
+  sm: $mobile,
+  md: $tabby,
+  lg:$desktop,
+  xl: $large
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

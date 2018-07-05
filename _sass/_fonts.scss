@@ -1,0 +1,22 @@
+.league-spartan{
+  font-family:League Spartan;
+}
+
+h1,h2,h3,h4{
+  font-family:"League Spartan";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+p, h5, h6{
+  font-family:"Open Sans";
+}
+
+a{
+  color: #000000;
+  //text-decoration: underline;
+  &:hover{
+    color: #000000;
+    text-decoration: underline;
+  }
+
+}
