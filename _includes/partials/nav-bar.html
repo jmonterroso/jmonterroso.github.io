@@ -1,11 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand league-spartan" href="#">{{ site.title }}</a>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand league-spartan fz-24" href="{{ site.url }}/">{{ site.title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-
+        <ul class="navbar-nav ml-auto fz-18">
+            <li class="nav-item">
+                <a class="nav-link active" href="{{ site.url }}/blog">Home</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ site.url }}/blog">Blog</a>
             </li>

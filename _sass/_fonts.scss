@@ -1,22 +1,49 @@
-.league-spartan{
-  font-family:League Spartan;
+html {
+  font-size: 14px;
 }
 
-h1,h2,h3,h4{
-  font-family:"League Spartan";
+.league-spartan {
+  font-family: League Spartan;
+}
+
+.oswald {
+  font-family: "Oswald";
+}
+
+h1, h2, h3, h4 {
+  //font-family:"League Spartan";
+  font-family: "Source Sans Pro";
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-p, h5, h6{
-  font-family:"Open Sans";
+
+p, h5, h6 {
+  font-family: "Source Sans Pro";
 }
 
-a{
+a {
   color: #000000;
   //text-decoration: underline;
-  &:hover{
+  &:hover {
     color: #000000;
     text-decoration: underline;
   }
 
+}
+
+.section-title {
+  letter-spacing: 2px;
+  &:after {
+    left: auto!important;
+    right: 0;
+  }
+  &:before, &:after {
+    background: none repeat scroll 0 0 #666666;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+  }
 }

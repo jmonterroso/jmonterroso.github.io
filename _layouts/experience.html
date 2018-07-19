@@ -1,7 +1,7 @@
 ---
 layout: core
 ---
-{% for post in site.experience  %}
+<div class="container py-5 my-5" >{% for post in site.experience  %}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <span class="post-date mb-2 d-block">{{ post.date | date: "%B %d, %Y" }}</span>
     {% if post.content.size > 100 %}
@@ -10,4 +10,4 @@ layout: core
     {% else %}
         {{ post.content }}
     {% endif %}
-{% endfor %}
+{% endfor %}</div>
