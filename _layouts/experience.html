@@ -1,13 +1,35 @@
 ---
 layout: core
+title: Experience
 ---
-<div class="container py-5 my-5" >{% for post in site.experience  %}
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <span class="post-date mb-2 d-block">{{ post.date | date: "%B %d, %Y" }}</span>
-    {% if post.content.size > 100 %}
-        {{ post.content | truncatewords:  50}} <!-- bad! content gives you rendered html and you will truncate in the middle of a node -->
-        <h4 class="fz-12"><a href="{{ post.url }}">read more</a></h4>
-    {% else %}
-        {{ post.content }}
-    {% endif %}
-{% endfor %}</div>
+
+<div class="jumbotron jumbotron-blog jumbotron-fluid py-5 d-flex align-items-center parallax bg-dark text-light">
+    <div class="container py-5 text-center">
+        <h1 class="ls-4 text-uppercase fz-28 fz-md-50 fz-lg-70  text-white ">Experience</h1>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            {% assign jobs = (site.experience | sort: 'date') | reverse %}
+            {% for job in jobs %}
+                <div class="col-lg-4 col-12 d-flex my-3" >
+                    <div class="card d-flex flex-column ">
+                        <img class="card-img-top" src="{{ site.url }}/{{ job.company_logo }}" alt="{{ job.company }}">
+                        <div class="card-body">
+                            <h5 class="card-title oswald">{{ job.company }}</h5>
+                            <h4 class="card-title">{{ job.position }}</h4>
+                            <p class="card-text">
+
+                                {{ job.content }}
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            {% endfor %}
+        </div>
+    </div>
+</div>

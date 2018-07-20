@@ -3,9 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: Jayson Monterroso Web Developer
 layout: core
+active: home
 ---
-<div class="jumbotron jumbotron-fluid py-5 d-flex align-items-center parallax"
-     style="background: url('img/hero-bg.jpg') no-repeat bottom center; background-size: cover; height:100vh   ">
+<div class="jumbotron jumbotron-home jumbotron-fluid py-5 d-flex align-items-center parallax">
     <div class="container py-5 text-center">
 
         <h2 class="text-uppercase fz-16 fz-md-20 fz-lg-28 ls-4 text-white">software developer</h2>
@@ -72,7 +72,7 @@ layout: core
                             class="badge badge-success">Experience</span></h3>
                 <div class="row my-5">
                     {% assign jobs = (site.experience | sort: 'date') | reverse %}
-                    {% for job in jobs %}
+                    {% for job in jobs limit : 3 %}
                         <div class="col-md-4 col-12 mb-5">
                             <div class="row">
                                 <div class="col-12 text-center" data-toggle="collapse"
