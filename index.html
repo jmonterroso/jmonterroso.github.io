@@ -518,12 +518,12 @@ active: home
                       method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="oswald fz-20">Enter your name:</label>
-                        <input type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1"
+                        <input required type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1"
                                aria-describedby="emailHelp" placeholder="John Smith">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="oswald fz-20">Enter your email:</label>
-                        <input type="email" name="_replyto" class="form-control form-control-lg" id="exampleInputEmail1"
+                        <input required type="email" name="_replyto" class="form-control form-control-lg" id="exampleInputEmail1"
                                aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
                             else.
@@ -531,7 +531,7 @@ active: home
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1" class="oswald fz-20">Your message</label>
-                        <textarea name="message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea required name="message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button>
                 </form>
