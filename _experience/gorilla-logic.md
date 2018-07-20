@@ -8,10 +8,16 @@ period: 2017 - Present
 company_logo: img/gorilla-logic-logo.png
 ---
  
-<ul>
-                                <li>Redesigned/Migrated marketing website for a SASS DevOps company.</li>
-                                <li>Developed global UI including assets/styles/scripts.</li>
-                                <li>Migrated all posts and content from Wordpress to Jekyll(Ruby).</li>
-                                <li>Implemented a third party CMS Service using Node+Contentful+Jekyll</li>
-                                <li>Implemented the continuos integration infrastructure using Netlify</li>
-                            </ul>
+
+
+
+Redesigned/Migrated marketing website for a SASS DevOps company.
+
+Developed global UI including assets/styles/scripts.
+
+Migrated all posts and content from Wordpress to Jekyll(Ruby).
+
+Implemented a third party CMS Service using Node+Contentful+Jekyll
+
+Implemented the continuos integration infrastructure using Netlify
+
