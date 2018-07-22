@@ -18,8 +18,8 @@ active: home
         <div class="col-md-12">
             <div class="row my-5">
                 <div class="col-12">
-                    <h3 class="py-3 bg-white section-title oswald fz-46 text-center font-weight-bold col-12 col-lg-4 mx-auto ">
-                        About <span class="badge badge-secondary">Me</span></h3>
+                    <h2 class="py-3 bg-white section-title oswald fz-46 text-center font-weight-bold col-12 col-lg-4 mx-auto ">
+                        About <span class="badge badge-secondary">Me</span></h2>
                 </div>
                 <div class="col-md-3 col-12">
                     <img src="{{ site.url }}/img/profile.jpg" alt="" class="img-fluid">
@@ -81,8 +81,8 @@ active: home
                                     <img class="img-fluid w-50 "
                                          src="{{ job.company_logo }}"
                                          alt="{{ job.company }}">
-                                    <h6 class="text-uppercase mt-5">{{ job.company }}</h6>
-                                    <h4 class="text-uppercase mt-2 mb-0">{{ job.position }}</h4>
+                                    <h4 class="text-uppercase mt-5" id="{{ job.company |remove: " " }}-text" >{{ job.company }}</h4>
+                                    <h5 class="text-uppercase mt-2 mb-0">{{ job.position }}</h5>
                                 </div>
 
                             </div>
@@ -95,7 +95,7 @@ active: home
 
                 {% for job in jobs %}
                     <div class="col-12">
-                        <div id="{{ job.company |remove: " " }}" class="collapse" aria-labelledby="headingOne"
+                        <div id="{{ job.company |remove: " " }}" class="collapse"
                              data-parent="#accordionExample">
                             <div class="card-body">
                                 {{ job.content }}
@@ -122,22 +122,22 @@ active: home
                             <div class="col-md-4 col-12">
                                 <div class="row mb-5 ">
                                     <div class="col-12 text-center"><i class="fz-64 fas fa-code"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald"> Web Development Coding &
-                                            Programming</h5>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald"> Web Development Coding &
+                                            Programming</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="row mb-5">
                                     <div class="col-12 text-center"><i class="fz-64 fas fa-mobile"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">Mobile Application
-                                            Developer</h5></div>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">Mobile Application
+                                            Developer</h4></div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="row mb-5">
                                     <div class="col-12 text-center"><i class="fab fz-64 fa-node"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">Back End Developer</h5>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">Back End Developer</h4>
                                     </div>
                                 </div>
                             </div>
@@ -148,22 +148,22 @@ active: home
                             <div class="col-md-4 col-12">
                                 <div class="row mb-3">
                                     <div class="col-12 text-center"><i class="fas fa-shopping-cart fz-64"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">E-Commerce Websites
-                                            Development</h5></div>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">E-Commerce Websites
+                                            Development</h4></div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="row mb-3">
                                     <div class="col-12 text-center"><i class="fas fa-credit-card fz-64"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">Payment Gateways Integration
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">Payment Gateways Integration
                                             (Woocommerce &
-                                            Shopify)</h5></div>
+                                            Shopify)</h4></div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="row mb-3">
                                     <div class="col-12 text-center"><i class="fas fa-bug fz-64"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">Site Troubleshooting</h5>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">Site Troubleshooting</h4>
                                     </div>
                                 </div>
                             </div>
@@ -174,20 +174,20 @@ active: home
                             <div class="col-md-4 col-12">
                                 <div class="row mb-3">
                                     <div class="col-12 text-center"><i class="fas fa-pencil-alt fz-64"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">UX & UI Design</h5></div>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">UX & UI Design</h4></div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="row mb-3">
                                     <div class="col-12 text-center"><i class="fab fa-trello fz-64"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">Agile Methodologies</h5>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">Agile Methodologies</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="row mb-3">
                                     <div class="col-12 text-center"><i class="fas fa-server fz-64"></i></div>
-                                    <div class="mt-3 col-12 text-center"><h5 class="oswald">Hosting & Maintenance</h5>
+                                    <div class="mt-3 col-12 text-center"><h4 class="oswald">Hosting & Maintenance</h4>
                                     </div>
                                 </div>
                             </div>
@@ -289,27 +289,27 @@ active: home
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6  col-12">
-                                        <a href="http://www.darwinzone.com/" target="_blank"><img src="{{ site.url }}/img/clients/darwin.jpg" alt=""/></a>
+                                        <a href="http://www.darwinzone.com/" target="_blank"><img alt="Darwing by Lionbridge" src="{{ site.url }}/img/clients/darwin.jpg" alt=""/></a>
                                     </div>
                                     <div class="col-md-4 col-12">
-                                        <a href="http://stance.com/" target="_blank"><img src="{{ site.url }}/img/clients/stance.jpg" alt=""/></a>
+                                        <a href="http://stance.com/" target="_blank"><img alt="Stance Socks" src="{{ site.url }}/img/clients/stance.jpg" alt=""/></a>
                                     </div>
                                     <div class="col-lg-4 col-md-6  col-12">
-                                        <img src="{{ site.url }}/img/clients/tansler.jpg" alt=""/>
+                                        <img src="{{ site.url }}/img/clients/tansler.jpg" class="Tansler" alt=""/>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6  col-12">
-                                        <a href="https://www.yoursecretcode.com/#/" target="_blank"><img src="{{ site.url }}/img/clients/secret-code.jpg" alt=""/></a>
+                                        <a href="https://www.yoursecretcode.com/#/" target="_blank"><img alt="yoursecretcode.com" src="{{ site.url }}/img/clients/secret-code.jpg" alt=""/></a>
                                     </div>
 
                                     <div class="col-lg-4 col-md-6  col-12">
-                                        <a href="https://www.hghdesarrollos.com/" target="_blank"><img src="{{ site.url }}/img/clients/hgh-desarrollos.jpg" alt=""/></a>
+                                        <a href="https://www.hghdesarrollos.com/" target="_blank"><img alt="HGH Desarrollos" src="{{ site.url }}/img/clients/hgh-desarrollos.jpg" alt=""/></a>
                                     </div>
                                     <div class="col-md-4 col-12">
-                                        <a href="https://www.facebook.com/pages/biz/la-uruca/Talento-Humano-SA-161240407271506/" target="_blank"><img src="{{ site.url }}/img/clients/talento-humano.jpg" alt=""/></a>
+                                        <a href="https://www.facebook.com/pages/biz/la-uruca/Talento-Humano-SA-161240407271506/" target="_blank"><img alt="Talento Humano" src="{{ site.url }}/img/clients/talento-humano.jpg" alt=""/></a>
                                     </div>
 
                                 </div>
@@ -317,7 +317,7 @@ active: home
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6  col-12">
-                                        <a href="https://www.simetryropadeportiva.com/" target="_blank"><img src="{{ site.url }}/img/clients/simetry.jpg" alt=""/></a>
+                                        <a href="https://www.simetryropadeportiva.com/" target="_blank"><img alt="Simetry Sportswear" src="{{ site.url }}/img/clients/simetry.jpg" alt=""/></a>
                                     </div>
 
 
@@ -356,9 +356,9 @@ active: home
                             <div class="col">&nbsp;</div>
                             <div class="col">&nbsp;</div>
                         </div>
-                        <h5 class="m-2">
+                        <div class="m-2">
                             <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        </h5>
+                        </div>
                         <div class="row h-50">
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
@@ -384,9 +384,9 @@ active: home
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
                         </div>
-                        <h5 class="m-2">
+                        <div class="m-2">
                             <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        </h5>
+                        </div>
                         <div class="row h-50">
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
@@ -410,9 +410,9 @@ active: home
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
                         </div>
-                        <h5 class="m-2">
+                        <div class="m-2">
                             <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        </h5>
+                        </div>
                         <div class="row h-50">
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
@@ -436,9 +436,9 @@ active: home
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
                         </div>
-                        <h5 class="m-2">
+                        <div class="m-2">
                             <span class="badge badge-pill bg-light border">&nbsp;</span>
-                        </h5>
+                        </div>
                         <div class="row h-50">
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
@@ -462,9 +462,9 @@ active: home
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
                         </div>
-                        <h5 class="m-2">
+                        <div class="m-2">
                             <span class="badge badge-pill bg-success">&nbsp;</span>
-                        </h5>
+                        </div>
                         <div class="row h-50">
                             <div class="col border-right">&nbsp;</div>
                             <div class="col">&nbsp;</div>
@@ -494,7 +494,7 @@ active: home
             <div class="row mt-4">
                 <div class="col-12 text-center">
                     <a href="#contact-form" class="btn btn-outline-light btn-lg">Hire me!</a>
-                    <a href="{{ site.url }}/pdf/jayson-monterroso-resume.pdf" target="_blank" class="btn btn-outline-light btn-lg"> <i class="fas fa-download mr-2"></i> Download Resume</a>
+                    <a href="{{ site.url }}/pdf/jayson-monterroso-resume.pdf" aria-label="Open PDF File Resume" target="_blank" class="btn btn-outline-light btn-lg"> <i class="fas fa-download mr-2"></i> Download Resume</a>
                 </div>
             </div>
 
@@ -517,21 +517,21 @@ active: home
                 <form action="https://formspree.io/jayson.monterroso@gmail.com"
                       method="POST">
                     <div class="form-group">
-                        <label for="exampleInputEmail1" class="oswald fz-20">Enter your name:</label>
-                        <input required type="text" name="name" class="form-control form-control-lg" id="exampleInputEmail1"
-                               aria-describedby="emailHelp" placeholder="John Smith">
+                        <label for="name" class="oswald fz-20">Enter your name:</label>
+                        <input required type="text" name="name" class="form-control form-control-lg" id="name"
+                               aria-describedby="name" placeholder="John Smith">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1" class="oswald fz-20">Enter your email:</label>
-                        <input required type="email" name="_replyto" class="form-control form-control-lg" id="exampleInputEmail1"
-                               aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="email" class="oswald fz-20">Enter your email:</label>
+                        <input required type="email" name="_replyto" class="form-control form-control-lg" id="email"
+                               aria-describedby="email" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
                             else.
                         </small>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1" class="oswald fz-20">Your message</label>
-                        <textarea required name="message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="message" class="oswald fz-20">Your message</label>
+                        <textarea required name="message" class="form-control form-control-lg" id="message" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button>
                 </form>
