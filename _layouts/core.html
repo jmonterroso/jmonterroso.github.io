@@ -39,7 +39,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script src="https://www.googletagmanager.com/gtag/js?id=UA-122727615-1" async></script>
-<script>
+<script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -59,7 +59,7 @@
 <noscript id="deferred-styles">
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/styles.css"/>
 </noscript>
-<script>
+<script async>
     var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
