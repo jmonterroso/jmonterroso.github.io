@@ -48,4 +48,4 @@ collections:
     output: true
  projects:
     output: true
-
+activate :syntax, line_numbers: true
