@@ -8,6 +8,7 @@ categories: frontend angular forms
 # image: hyperapp-fundamentals.png
 reading_time: 5 min
 comments: true
+slug: create-a-register-form-with-angular-6
 ---
 <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
 

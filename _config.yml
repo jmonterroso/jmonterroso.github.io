@@ -48,4 +48,7 @@ collections:
     output: true
  projects:
     output: true
+ posts:
+    output: true
+    permalink: /blog/:slug/
 activate :syntax, line_numbers: true
