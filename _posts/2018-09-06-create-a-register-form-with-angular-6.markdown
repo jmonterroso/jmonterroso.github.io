@@ -1,12 +1,15 @@
 ---
 layout: post
 title:  "How to Create a Register Form with Angular 6"
+description: In this post you will learn How to Create a Register Form with Angular 6 in minutes and pretty straightforward.
+image: '/img/blog/create-simple-register-form-angular-6.jpg'
 date:   2018-09-06 08:46:02 -0600
 categories: frontend angular forms
 # image: hyperapp-fundamentals.png
 reading_time: 5 min
 comments: true
 ---
+<img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
 
 In this post I share with you How to Create a Register Form with Angular 6 easy using bootstrap 4, it includes a simple validation but it helps you to understand how to validate forms with Angular
 

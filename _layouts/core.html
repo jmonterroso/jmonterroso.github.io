@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="{{ layout.cls }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -29,7 +29,7 @@
         <meta content="{{ site.url }}/about/" property="article:author">
     {% endif %}
     {% if page.image %}
-        <meta content="{{ site.url }}/img/srcset/{{ page.image }}" property="og:image">
+        <meta content="{{ site.url }}{{ page.image }}" property="og:image">
     {% else %}
         <meta content="{{ site.url }}/img/cover-image.png" property="og:image">
     {% endif %}
@@ -47,7 +47,7 @@
     <meta name="description" content="{{page.description}}">
     <link rel="stylesheet" href="{{ site.url }}/css/styles.css">
 </head>
-<body>
+<body >
 {% include partials/nav-bar.html %}
 <main class="container-fluid px-0">
 
