@@ -10,7 +10,6 @@ reading_time: 5 min
 comments: true
 slug: create-a-register-form-with-angular-6
 ---
-<img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
 
 In this post I share with you How to Create a Register Form with Angular 6 easy using bootstrap 4, it includes a simple validation but it helps you to understand how to validate forms with Angular
 

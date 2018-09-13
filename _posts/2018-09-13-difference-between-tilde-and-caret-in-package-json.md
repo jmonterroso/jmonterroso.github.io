@@ -10,8 +10,6 @@ reading_time: 3 min
 comments: true
 slug: tilde-vs-caret-in-package-json
 ---
-<img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
-
 It's common as front end or javascript developer get into a project and check the folder structure and found a package.json file with a bunch of packages and versions,  in this article I try to explain the symbols ~ and ^ used in the files.
 
 Let's start describing how versioning works:

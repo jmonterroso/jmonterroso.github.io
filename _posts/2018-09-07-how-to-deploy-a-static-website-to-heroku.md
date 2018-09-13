@@ -10,8 +10,6 @@ reading_time: 5 min
 comments: true
 slug: how-to-deploy-a-static-website-to-heroku
 ---
-<img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid">
-
 Sometimes you want to deploy a simple website or a simple page to a free hosting for testing or development purposes this guide will help you to do it in an easy way.
 
 The approach used to deploy the static website is to trick Heroku to think this is a php application and the redirect to our html file.
