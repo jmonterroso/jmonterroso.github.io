@@ -11,7 +11,7 @@ company_logo: img/eleven-systems-logo.png
 
 Creation of scalable Angular Modules for a large web application
 
-Hooked up restful services with complex data using Angular 2
+Hooked up restful services with complex data using AngularJS
 
 Implemented complex financial charts using Highcharts JS.
 
