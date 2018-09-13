@@ -5,7 +5,7 @@ active: blog
 ---
 <div class="row">
     {% for post in site.posts %}
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12 d-flex flex-column">
             {% if post.image %}
                 <a class="container p-0 mb-3 preview-img" href="{{ post.url }}">
                     <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid">
@@ -33,10 +33,10 @@ active: blog
                     {% endfor %}
                 </div>
             </div>
-            <div class="row no-gutters mt-1">
+            <div class="row no-gutters  mt-auto">
                 <div class="col-12">
                     <p class="mt-0 mb-3 fz-16">{{ post.content | strip_html | truncatewords: 25 }}</p>
-                    <a class="d-block fz-18 _{{ post.title }}-readMore" href="{{ post.url }}">Read More &raquo;</a>
+                    <a class="d-block fz-14 _{{ post.title }}-readMore" href="{{ post.url }}">Read More &raquo;</a>
                 </div>
 
             </div>
