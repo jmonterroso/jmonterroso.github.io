@@ -31,7 +31,9 @@ The approach used to deploy the static website is to trick Heroku to think this 
 <?php include_once("home.html"); ?> 
 ```
 - After editing the `index.php` file next you have to edit `composer.json` and add the following line to the file `{}`
-- The last step is to run the following command (we assumed you already set up the heroku app and the git branch inside your project) ```git push heroku master```
+- Last step is to run the following command (we assumed you already set up the heroku app and the git branch inside your project) 
+
+```git push heroku master```
 
 
 - That's it! Visit your deployed single-page website, hosted by Heroku (as a simple PHP app 😎).

@@ -5,20 +5,20 @@ active: blog
 ---
 <div class="row">
     {% for post in site.posts %}
-        <div class="col-lg-4 col-12">
+        <div class="col-lg-6 col-12">
             {% assign images = post.content| split:"<img " %}
             {% for image in images %}
                 {% if image contains 'src=' %}
-                    <div class="container p-0 mb-3 preview-img">
+                    <a class="container p-0 mb-3 preview-img" href="{{ post.url }}">
                         {% assign imageMarkup = image | split:">" | first %}
                         <img {{ imageMarkup }} class="img-fluid">
-                    </div>
+                    </a>
                     {% break %}
 
                 {% endif %}
             {% endfor %}
 
-            <h3 class="oswald font-weight-bold"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h3 class="oswald "><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <h6>{{ post.date | date: "%B %e, %Y" }}</h6>
             <div class="row">
                 <div class="col-12 d-flex">
