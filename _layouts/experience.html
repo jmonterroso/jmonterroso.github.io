@@ -2,15 +2,15 @@
 layout: core
 title: Experience
 ---
-
-<div class="jumbotron jumbotron-blog jumbotron-fluid py-5 d-flex align-items-center parallax bg-dark text-light">
-    <div class="container py-5 text-center">
-        <h1 class="ls-4 text-uppercase fz-28 fz-md-50 fz-lg-70  text-white ">Experience</h1>
-    </div>
-</div>
 <div class="container-fluid">
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <h1 class="ls-4 text-uppercase fz-28 fz-md-50 fw-500">Experience</h1>
+            </div>
+        </div>
+        <div class="row">
+
             {% assign jobs = (site.experience | sort: 'date') | reverse %}
             {% for job in jobs %}
                 <div class="col-lg-4 col-12 d-flex my-3" >
