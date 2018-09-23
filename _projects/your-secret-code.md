@@ -4,7 +4,7 @@ layout: core
 date: 2017-07-02
 company: YOURSECRETCODE.COM
 position: S3 Migration/Node Refactoring
-period: 2017
+period: ""
 company_logo: img/clients/secret-code.jpg
 ---
 Migration of current self-served Node instance to a Serverless Architecture using Serverless Application Framework.
