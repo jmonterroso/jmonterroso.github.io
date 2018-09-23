@@ -12,4 +12,4 @@ Migration of Mongo Database to AWS DynamoDB.
 Refactoring codebase based in node in order to improve performance and code readability.
 Implementation of ES6 in the website core functions which is the book creation/generation based on user input. 
 
-**Stack of techonologies:** Nativescript, Angular 4, GraphQL Express Node.js.
+**Stack of technologies:** Nativescript, Angular 4, GraphQL Express Node.js.
