@@ -1,0 +1,36 @@
+---
+layout: core
+title: Experience
+---
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="ls-4 text-uppercase fz-28 fz-md-50 fw-500">Experience</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            {% assign projects = (site.projects | sort: 'date') | reverse %}
+            {% for project in projects %}
+                <div class="col-lg-4 col-12 d-flex my-3" >
+                    <div class="card d-flex flex-column ">
+                        <img class="card-img-top" src="{{ site.url }}/{{ project.company_logo }}" alt="{{ project.company }}">
+                        <div class="card-body">
+                            <h5 class="card-title oswald">{{ project.company }}</h5>
+                            <h4 class="card-title">{{ project.position }}</h4>
+                            <h6>{{ project.period }}</h6>
+                            <p class="card-text">
+
+                                {{ project.content }}
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
