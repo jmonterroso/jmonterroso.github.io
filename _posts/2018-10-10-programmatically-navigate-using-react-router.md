@@ -8,7 +8,7 @@ categories: es6 react react-router javascript snippet
 # image: hyperapp-fundamentals.png
 reading_time: 1 min
 comments: true
-slug: javascript-functions-without-parentheses
+slug: programmatically-navigate-using-react-router
 ---
 This is a snippet code for all developers looking how to navigate between "Views" using React Router programmatically, 
 
