@@ -3,7 +3,7 @@ layout: post
 title:  "How to Fix: fatal: refusing to merge unrelated histories"
 description: "This post describes a simple snippet How to Fix: fatal: refusing to merge unrelated histories very common when you're creating a new repository"   
 image: '/img/blog/how-to-fix-fatal-refusing-to-merge-unrelated-histories.jpg'
-date:   2018-10-12 8:46:02 -0600
+date:   2018-10-19 8:46:02 -0600
 categories: es6 react react-router javascript snippet 
 # image: hyperapp-fundamentals.png
 reading_time: 1 min
