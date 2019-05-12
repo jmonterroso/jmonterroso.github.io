@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="{{ layout.cls }}">
+<html lang="{%if page.lang %}{{ page.lang }} {% else%} en{% endif %}" class="{{ layout.cls }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
