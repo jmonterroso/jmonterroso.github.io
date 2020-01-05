@@ -29,23 +29,10 @@ a {
 
 .section-title {
   letter-spacing: 2px;
-  &:after {
-    left: auto!important;
-    right: 0;
-  }
-  &:before, &:after {
-    background: none repeat scroll 0 0 #666666;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    top: 50%;
-    width: 30px;
-  }
 }
 
 a{
-  color: #000!important;
+  // color: #000!important;
 }
 .post{
   font-size:0.75rem;

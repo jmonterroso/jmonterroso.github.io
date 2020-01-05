@@ -8,8 +8,14 @@ period: 2011
 company_logo: img/bosz-digital-logo.png
 ---
 
+
+
+### **Web Developer @ Bank of America**
+
 Created mobile and web landing pages to support local/global marketing campaigns, based on client requirements and specifications.
 
-Implemented best practices for accessibility across all landing pages. Certified with ADA certification for accessibility
-coding best practices
+Implemented best practices for accessibility across all landing pages. 
 
+Certified with ADA certification for accessibility coding best practices
+
+**Stack of Technologies:** HTML5/CSS/Javascript/jQuery

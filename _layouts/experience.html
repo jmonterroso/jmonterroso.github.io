@@ -11,28 +11,21 @@ description: Here on this page I describe every job I ever had excluding freelan
                 <h1 class="ls-4 text-uppercase fz-28 fz-md-50 fw-500">Experience</h1>
             </div>
         </div>
-        <div class="row">
 
-            {% assign jobs = (site.experience | sort: 'date') | reverse %}
-            {% for job in jobs %}
-                <div class="col-lg-4 col-12 d-flex my-3" >
-                    <div class="card d-flex flex-column ">
-                        <img class="card-img-top" src="{{ site.url }}/{{ job.company_logo }}" alt="{{ job.company }}">
-                        <div class="card-body">
-                            <h5 class="card-title oswald">{{ job.company }}</h5>
-                            <h4 class="card-title">{{ job.position }}</h4>
-                            <h6>{{ job.period }}</h6>
-                            <p class="card-text">
+        {% assign jobs = (site.experience | sort: 'date') | reverse %}
+        {% for job in jobs %}
+        <div class="row py-5 my-5">
+            <div class=" col-md-4 col-12 text-center">
+                <img class="img-fluid" src="{{ site.url }}/{{ job.company_logo }}" alt="{{ job.company }}">
+                <h2 class="card-title oswald">{{ job.company }}</h2>
+                <h6>{{ job.period }}</h6>
+            </div>
+            <div class="col-md-8 col-12">
+                {{ job.content }}
+            </div>
 
-                                {{ job.content }}
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            {% endfor %}
         </div>
+        {% endfor %}
+
     </div>
 </div>
