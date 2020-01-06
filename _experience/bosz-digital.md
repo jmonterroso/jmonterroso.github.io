@@ -5,7 +5,7 @@ date: 2018-07-01
 company: Bosz Digital
 position: Web Developer
 period: 2011 
-company_logo: img/bosz-digital-logo.png
+company_logo: img/bosz-digital-logo.jpg
 ---
 
 

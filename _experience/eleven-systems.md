@@ -5,7 +5,7 @@ date: 2018-07-04
 company: Eleven Systems LLC
 position: Software Engineer
 period: 2016 - 2017
-company_logo: img/eleven-systems-logo.png
+company_logo: img/eleven-systems-logo.jpg
 ---
 
 ### **Software Developer** 

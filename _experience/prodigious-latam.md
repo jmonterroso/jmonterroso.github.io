@@ -5,7 +5,7 @@ date: 2018-07-03
 company: PRODIGIOUS LATAM
 position: Principal Layer Engineer
 period: 2013 - 2016
-company_logo: img/prodigious-logo.png
+company_logo: img/prodigious-logo.jpg
 ---
 
 

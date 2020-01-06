@@ -5,7 +5,7 @@ date: 2018-06-01
 company: Latitude Ten North
 position: Full Stack Developer
 period: 2010-2011 
-company_logo: img/latitude-ten-north-logo.png
+company_logo: img/latitude-ten-north-logo.jpg
 ---
 
 ### **Full Stack Developer @ Act Right/Ohio GOP**

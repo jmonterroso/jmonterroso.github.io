@@ -5,7 +5,7 @@ date: 2018-07-02
 company: Accenture
 position: Web Developer
 period: 2011 - 2013
-company_logo: img/accenture-logo.png
+company_logo: img/accenture-logo.jpg
 ---
 
 ### **Web Developer @ Merck**

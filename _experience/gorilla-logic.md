@@ -5,7 +5,7 @@ date: 2018-07-05
 company: Gorilla Logic
 position: Software Developer 
 period: 2017 - Present
-company_logo: img/gorilla-logic-logo.png
+company_logo: img/gorilla-logic-logo.jpg
 ---
 
 
