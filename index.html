@@ -116,7 +116,7 @@ active: home
 
 
     {% assign jobs = (site.experience | sort: 'date') | reverse %}
-    {% for job in jobs limit : 5 %}
+    {% for job in jobs %}
     <div class="row py-5 my-5 ">
         <div class="col-md-4 col-12 text-center">
             <img class="img-fluid text-center w-50 "
