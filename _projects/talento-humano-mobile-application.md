@@ -7,6 +7,8 @@ position: Mobile Application / Backoffice Web Application /Api Services/DevOps
 period: ""
 company_logo: img/clients/talento-humano.jpg
 ---
+### **Mobile Developer/Fullstack Developer/ DevOps** 
+
 Responsible for creation of a native mobile application for iOS/Android using nativescript
 Creation of a single web application Back Office System to manage the web application and mobile application. 
 Creation of backend services using GraphQL to support both application and back office web app, 

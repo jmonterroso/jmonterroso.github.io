@@ -14,33 +14,33 @@ active: home
                 <h1 class="ls-4 text-uppercase fz-28 fz-md-50 fz-lg-70">Jayson Monterroso </h1>
             </div>
         </div>
-        
-        
+
+
         <div class="row mt-5 flex-row">
             <a class="col-2 fz-28" aria-label="Github Profile" href="https://github.com/{{ site.github_username }}"
             target="_blank"><i class="fab fa-github"></i></a>
             <a class="col-2 " aria-label="LinkedIn Profile"
             href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i
                 class="fab fa-linkedin-in"></i></a>
-    
-    
+
+
         <a class="col-2  fz-28" aria-label="Stackoverflow Profile" href="https://stackoverflow.com/users/1064378/jaym"
             target="_blank"><i class="fab fa-stack-overflow"></i></a>
-    
-    
+
+
         <a class="col-2  fz-28" aria-label="Twitter Profile" href="https://www.twitter.com/{{ site.twitter_username}}"
             target="_blank"><i class="fab fa-twitter"></i></a>
-    
-    
+
+
         <a class="col-2  fz-28" aria-label="Call Me!" href="tel:+50687066404" target="_blank"><i
                 class="fas fa-phone"></i></a>
-    
-    
+
+
         <a class="col-2  fz-28" aria-label="Email Me!" href="mailto:jayson.monterroso@gmail.com" target="_blank"><i
                 class="fas fa-envelope"></i></a>
         </div>
     </div>
-    
+
 </div>
 
 <div class="container">
@@ -51,7 +51,7 @@ active: home
             <h2 class="py-3 bg-white section-title oswald fz-46 text-center font-weight-bold col-12 col-lg-4 mx-auto ">
                 About <span class="badge badge-primary">Me</span></h2>
         </div>
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12 text-center text-md-left">
             <img src="{{ site.url }}/img/profile.jpg" alt="Jayson Monterroso Picture" class="img-fluid">
             <blockquote class="blockquote mt-3">
                 <p class="oswald fz-18 ls-1 ">I can do all things through CHRIST who strengthens me.</p>
@@ -118,12 +118,12 @@ active: home
     {% assign jobs = (site.experience | sort: 'date') | reverse %}
     {% for job in jobs %}
     <div class="row py-5 my-5 ">
-        <div class="col-md-4 col-12 text-center">
+        <div class="col-md-4 col-12 text-center text-md-left text-center">
             <img class="img-fluid text-center w-50 "
                  src="{{ job.company_logo }}"
                  alt="{{ job.company }}">
-            <h2 class="font-weight-bold text-center text-uppercase mt-5"
-                id="{{ job.company |remove: " " }}-text" >{{ job.company }}</h2>
+            <h2 class="oswald card-title  ls-1 text-uppercase">{{ job.company }}</h2>
+            <h6 class="oswald card-title  ls-1 text-uppercase">{{ job.period }}</h6>
         </div>
 
         <div class="col-md-8 col-12">
@@ -140,102 +140,89 @@ active: home
     <div class="container">
         <div class="row my-5">
             <div class="col-12">
-                <h3 class="section-title oswald fz-46 text-center font-weight-bold col-md-4 col-12 mx-auto mb-5 pb-5"><span
+                <h3 class="section-title oswald fz-46 text-center font-weight-bold col-md-4 col-12 text-center text-md-left mx-auto mb-5 pb-5"><span
                         class="badge badge-success">EXPERTISE</span></h3>
                 <div class="row my-5">
-                    <div class="col-12 col-md-12 mb-4">
-                        <div class="row">
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-5 ">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i class="fz-48 fas fa-code"></i>
-                                    </div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1"> Web Development Coding
-                                        &
-                                        Programming</h4>
-                                    </div>
-                                </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-5 ">
+                            <div class="col-12 col-md-5 text-center fz-48"><i class="fz-48 fas fa-code"></i>
                             </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-5">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i class="fz-48 fas fa-mobile"></i>
-                                    </div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Mobile Application
-                                        Developer</h4></div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-5">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i class="fab fz-48 fa-node"></i>
-                                    </div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Back End Developer</h4>
-                                    </div>
-                                </div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1"> Web Development Coding
+                                &
+                                Programming</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-4">
-                        <div class="row">
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i
-                                            class="fas fa-shopping-cart fz-48"></i></div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">E-Commerce Websites
-                                        Development</h4></div>
-                                </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-5">
+                            <div class="col-12 col-md-5 text-center fz-48"><i class="fz-48 fas fa-mobile"></i>
                             </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i
-                                            class="fas fa-credit-card fz-48"></i></div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Payment Gateways
-                                        Integration
-                                        (Woocommerce &
-                                        Shopify)</h4></div>
-                                </div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Mobile Application
+                                Developer</h4></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-5">
+                            <div class="col-12 col-md-5 text-center fz-48"><i class="fab fz-48 fa-node"></i>
                             </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i class="fas fa-bug fz-48"></i>
-                                    </div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Site
-                                        Troubleshooting</h4>
-                                    </div>
-                                </div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Back End Developer</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-4">
-                        <div class="row">
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i
-                                            class="fas fa-pencil-alt fz-48"></i></div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">UX & UI Design</h4>
-                                    </div>
-                                </div>
+
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-5 text-center fz-48"><i
+                                    class="fas fa-shopping-cart fz-48"></i></div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">E-Commerce Websites
+                                Development</h4></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-5 text-center fz-48"><i
+                                    class="fas fa-credit-card fz-48"></i></div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Payment Gateways
+                                Integration
+                                (Woocommerce &
+                                Shopify)</h4></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-5 text-center fz-48"><i class="fas fa-bug fz-48"></i>
                             </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i class="fab fa-trello fz-48"></i>
-                                    </div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Agile Methodologies</h4>
-                                    </div>
-                                </div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Site
+                                Troubleshooting</h4>
                             </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-5 text-center fz-48"><i class="fas fa-server fz-48"></i>
-                                    </div>
-                                    <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Hosting &
-                                        Maintenance</h4>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-5 text-center fz-48"><i
+                                    class="fas fa-pencil-alt fz-48"></i></div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">UX & UI Design</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-5 text-center fz-48"><i class="fab fa-trello fz-48"></i>
+                            </div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Agile Methodologies</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 text-center text-md-left">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-5 text-center fz-48"><i class="fas fa-server fz-48"></i>
+                            </div>
+                            <div class="mt-3 col-md-7 col-12 "><h4 class="oswald fz-20 text-uppercase ls-1">Hosting &
+                                Maintenance</h4>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </div>
 </div>
 <div class="container-fluid  py-5">
@@ -335,7 +322,7 @@ active: home
                                             alt="Darwing by Lionbridge" src="{{ site.url }}/img/clients/darwin.jpg"
                                             alt=""/></a>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4 col-12 text-center text-md-left">
                                     <a href="http://stance.com/" target="_blank"><img alt="Stance Socks"
                                                                                       src="{{ site.url }}/img/clients/stance.jpg"
                                                                                       alt=""/></a>
@@ -358,7 +345,7 @@ active: home
                                                                                                    src="{{ site.url }}/img/clients/hgh-desarrollos.jpg"
                                                                                                    alt=""/></a>
                                 </div>
-                                <div class="col-md-4 col-12">
+                                <div class="col-md-4 col-12 text-center text-md-left">
                                     <a href="https://www.facebook.com/pages/biz/la-uruca/Talento-Humano-SA-161240407271506/"
                                        target="_blank"><img alt="Talento Humano"
                                                             src="{{ site.url }}/img/clients/talento-humano.jpg" alt=""/></a>
@@ -554,7 +541,7 @@ active: home
                     <div class="btn-group">
                         <a href="#contact-form" class="btn btn-outline-primary btn-lg ">Hire me!</a>
                         <a href="{{ site.url }}/pdf/jayson-monterroso-resume.pdf" aria-label="Open PDF File Resume"
-                           target="_blank" class="btn btn-outline-success btn-lg"> 
+                           target="_blank" class="btn btn-outline-success btn-lg">
                             Download Resume <i class="fas fa-download mr-2"></i></a>
                     </div>
                 </div>

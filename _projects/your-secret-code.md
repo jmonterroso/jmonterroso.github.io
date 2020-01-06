@@ -7,6 +7,7 @@ position: S3 Migration/Node Refactoring
 period: ""
 company_logo: img/clients/secret-code.jpg
 ---
+### **Full Stack Developer Consultant**
 Migration of current self-served Node instance to a Serverless Architecture using Serverless Application Framework.
 Migration of Mongo Database to AWS DynamoDB.
 Refactoring codebase based in node in order to improve performance and code readability.
