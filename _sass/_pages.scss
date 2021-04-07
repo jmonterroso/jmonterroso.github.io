@@ -1,0 +1,48 @@
+.vh-100 {
+  height: 100vh;
+}
+
+.hero {
+  background: url('/assets/img/hero-img.jpg') no-repeat;
+  background-size: cover;
+  padding: 0;
+
+  #one, #two, #three {
+    opacity: 0;
+  }
+}
+
+.about {
+  background: #54ca95;
+
+
+}
+
+.experience {
+  background: #fff;
+  .company-logo{
+    max-width: 150px;
+  }
+  &-items{
+    opacity: 0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+ .section-description,.section-title{
+   opacity: 0;
+ }
+  .technologies{
+    img{
+      max-width: 50px;
+      //filter: grayscale(100%);
+
+    }
+  }
+}
+
+
+.experience.row.py-5.my-5{
+  position: absolute;
+  top: 0;
+}

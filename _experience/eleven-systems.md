@@ -8,7 +8,7 @@ period: 2016 - 2017
 company_logo: img/eleven-systems-logo.jpg
 ---
 
-### **Software Developer** 
+<h3 class="underline"><strong>Software Developer</strong></h3> 
 
 I worked as a Software Developer for this startup when it was in the early stages of the development process, I helped to implement new functionality from scratch based on client requirements, included the use of data from third-party API services such as Salesforce and other financial services. I also created scalable Angular Modules hooking them up with restful services with complex data and managing the state of the Web Application using Angular, created visualization modules to display complex financial charts using Highcharts JS Javascript Library.
 

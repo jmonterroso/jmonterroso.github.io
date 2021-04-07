@@ -8,11 +8,13 @@ period: 2010-2011
 company_logo: img/latitude-ten-north-logo.jpg
 ---
 
-### **Full Stack Developer @ Act Right/Ohio GOP**
+<h3 class="underline"><strong>Full Stack Developer @ Act Right/Ohio GOP</strong></h3>
 
-Responsible for evaluating the technological environment and scope of the projects and suggest possible development stacks along with timelines. And implementation of the solution.
+Responsible for evaluating the technological environment and scope of the projects and suggest possible development
+stacks along with timelines. And implementation of the solution.
 
-Web Developer (using PHP and CMS based on PHP Wordpress/Expression Engine) creating functional backend/frontend websites based on detailed requirements from clients.
+Web Developer (using PHP and CMS based on PHP Wordpress/Expression Engine) creating functional backend/frontend websites
+based on detailed requirements from clients.
 
-Worked for several religious and political  projects organisations in the United States (Ohio GOP/Good Samaritan)
+Worked for several religious and political projects organisations in the United States (Ohio GOP/Good Samaritan)
 

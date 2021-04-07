@@ -4,18 +4,18 @@ layout: core
 date: 2018-07-05
 company: Gorilla Logic
 position: Software Developer 
-period: 2017 - Present
+period: 2017 - 2020
 company_logo: img/gorilla-logic-logo.jpg
 ---
 
 
-### **Development Lead @ Serena and Lily**
+<h3 class="underline "><strong>Development Lead @ Serena and Lily</strong></h3>
 
 Provide assistance and guidance to other developers in the team by implementing and evaluate best practices to optimize the development and the software product, implemented peer reviews to reduce the number of dev defects, in charge of maintenance of the existing eCommerce Website using Salesforce Commerce Cloud Platform (Demandware), analysis and creation of new functionality and cartridges. Implementation of new modules. Implementation of Transactional Emails by using a third party vendor.
 
 **Stack of technologies:** Node Rhino, Java, ES6, SCSS, HTML, Salesforce Commerce Cloud
 
-### **Software Developer @ Splunk**
+<h3 class="underline mt-4"><strong>Software Developer @ Splunk</strong></h3>
 
 Head of Web Development for marketing for Splunk + VictorOps company, I was in the full development cycle of the redesigning and migrating the main marketing website, migrating from a Wordpress CMS to a Jamstack Architecture, using Jekyll as Static Generator. 
 

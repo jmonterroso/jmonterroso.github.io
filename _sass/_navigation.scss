@@ -1,0 +1,9 @@
+.navigation{
+  background: rgba($white, 0.4);
+  backdrop-filter: blur(2px);
+  transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+  top: -71px;
+}

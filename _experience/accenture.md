@@ -8,11 +8,11 @@ period: 2011 - 2013
 company_logo: img/accenture-logo.jpg
 ---
 
-### **Web Developer @ Merck**
+<h3 class="underline"><strong>Web Developer @ Merck</strong></h3>
 
 Created hybrid mobile application (iOs/Android) using Sencha Touch 1.5 and 2.0 javascript framework
 
-### **Back End Developer @ vacationscostarica.com**
+<h3 class="underline mt-4"><strong>Back End Developer @ vacationscostarica.com</strong></h3>
 
 In Charge of the whole Back End development architecture of the website, I created custom content types, to be used in the Wordpress Admin Section. 
 
@@ -20,7 +20,7 @@ Created a Wordpress Plugins to support external Razuna server upload of assest f
 
 Worked as backend developer(php) creating the content and website architecture and functionality for a wordpress website. costaricavacations.com.
 
-### **Web Developer @ Gatorade**
+<h3 class="underline mt-4"><strong>Web Developer @ Gatorade</strong></h3>
 
 Worked in the creation of a SPA to display college sports scores/statistics using **Backbone.js** and consuming restful services 
 

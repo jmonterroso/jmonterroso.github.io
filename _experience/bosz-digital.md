@@ -10,7 +10,7 @@ company_logo: img/bosz-digital-logo.jpg
 
 
 
-### **Web Developer @ Bank of America**
+<h3 class="underline"><strong>Web Developer @ Bank of America</strong></h3>
 
 Created mobile and web landing pages to support local/global marketing campaigns, based on client requirements and specifications.
 

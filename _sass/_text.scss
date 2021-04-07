@@ -16,31 +16,31 @@ $j: 8;
 @while $j < 100 {
   .fz-#{$j} {
     font-size: #{$j}px;
-    line-height: 1.22em;
-    * {
-      font-size: #{$j}px;
-      line-height: 1.22em;
-    }
+    line-height: 1.5em;
+    //* {
+    //  font-size: #{$j}px;
+    //  line-height: 1.22em;
+    //}
   }
 
   .fz-md-#{$j} {
      @include breakpoint(md) {
        font-size: #{$j}px;
        line-height: 1.22em;
-       * {
-         font-size: #{$j}px;
-         line-height: 1.22em;
-       }
+       //* {
+       //  font-size: #{$j}px;
+       //  line-height: 1.22em;
+       //}
      }
    }
   .fz-lg-#{$j} {
     @include breakpoint(lg) {
       font-size: #{$j}px;
       line-height: 1.22em;
-      * {
-        font-size: #{$j}px;
-        line-height: 1.22em;
-      }
+      //* {
+      //  font-size: #{$j}px;
+      //  line-height: 1.22em;
+      //}
     }
   }
   $j: $j + 1;
@@ -63,9 +63,9 @@ $m: 0;
 @while $m < 20 {
   .ls-#{$m} {
     letter-spacing: #{$m}px;
-    * {
-      letter-spacing: #{$m}px;
-    }
+    //* {
+    //  letter-spacing: #{$m}px;
+    //}
   }
   $m: $m + 1;
 }
