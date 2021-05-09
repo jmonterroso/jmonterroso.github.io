@@ -1,3 +1,15 @@
-.navbar{
-  background: rgba(255,255, 255, 0.7);
+.navbar {
+  background: rgba(255, 255, 255, 0.7);
+
+  .nav-link {
+    border-radius: 0!important;
+  }
+
+  .nav-link.active {
+    background: transparent;
+    color: #000000;
+    //border-bottom: 2px solid #000;
+
+
+  }
 }
