@@ -46,66 +46,58 @@ active: home
 
 <section class="container" id="about-me">
     <div class="row">
-        <div class="col-12">
+
+        <div class="col-md-12 col-12 mt-5 mt-md-0">
+            <h2 class="section-title fz-40 text-center fw-800 text-uppercase mb-4">
+                About Me</h2>
+            <p>
+                I think as a person We have to live to our full potential, in the different areas of our lives,
+                soul,
+                mind, body, every day of my life I try to reach the best version of me, as a professional, person,
+                husband and human being.
+            </p>
+            <p>
+                I'm a passionate Software Developer living in Costa Rica. It was my dream since I was a little boy
+                to
+                become involved in the software field I used to love playing videogames and I was thrilled and
+                curious
+                about how video games were built.
+            </p>
+            <p>
+                I knew from an early stage that I was going to become a Software Engineer, while I was still in
+                school,
+                I loved to read computers magazines and everything I could find about software.
+            </p>
+            <p>
+                I started my career as a developer in 2008 after I graduated from college, my first job was very
+                challenging from the beginning since I was in charge of developing an entire Website with the only
+                experience I had in college, it was very challenging but very rewarding at the same time when I
+                completed the task.
+            </p>
+            <p>
+                As a software developer, I've worked for a wide variety of global clients, I have a vast array of
+                knowledge in many different front-end and back-end languages, responsive frameworks, databases,
+                mobile
+                development, and best code practices, I have more than 10 years of experience in Web Development.
+            </p>
+            <p>
+                God has blessed me to have two beautiful women in my life, my 7-year-old daughter, Jimena and my
+                lovely
+                wife Ana. I love living in Costa Rica, It's a beautiful country full of nature, peaceful, the people
+                are
+                nice here, and last but not least it has amazing beaches. I try to visit nature often as a
+                relaxation
+                method and keep away from daily stress
+            </p>
+            <p>
+                I'm OBSESSED to learn and improve every day my hard/soft skills since I know that the Development
+                field
+                is in rapid and constant change, so it's my duty as a developer to keep always updated with the
+                latest
+                technologies.
+            </p>
 
         </div>
-
-        <div class="row">
-            <div class="col-md-12 col-12 mt-5 mt-md-0">
-                <h2 class="section-title fz-40 text-center fw-800 text-uppercase mb-4">
-                    About Me</h2>
-                <p>
-                    I think as a person We have to live to our full potential, in the different areas of our lives,
-                    soul,
-                    mind, body, every day of my life I try to reach the best version of me, as a professional, person,
-                    husband and human being.
-                </p>
-                <p>
-                    I'm a passionate Software Developer living in Costa Rica. It was my dream since I was a little boy
-                    to
-                    become involved in the software field I used to love playing videogames and I was thrilled and
-                    curious
-                    about how video games were built.
-                </p>
-                <p>
-                    I knew from an early stage that I was going to become a Software Engineer, while I was still in
-                    school,
-                    I loved to read computers magazines and everything I could find about software.
-                </p>
-                <p>
-                    I started my career as a developer in 2008 after I graduated from college, my first job was very
-                    challenging from the beginning since I was in charge of developing an entire Website with the only
-                    experience I had in college, it was very challenging but very rewarding at the same time when I
-                    completed the task.
-                </p>
-                <p>
-                    As a software developer, I've worked for a wide variety of global clients, I have a vast array of
-                    knowledge in many different front-end and back-end languages, responsive frameworks, databases,
-                    mobile
-                    development, and best code practices, I have more than 10 years of experience in Web Development.
-                </p>
-                <p>
-                    God has blessed me to have two beautiful women in my life, my 7-year-old daughter, Jimena and my
-                    lovely
-                    wife Ana. I love living in Costa Rica, It's a beautiful country full of nature, peaceful, the people
-                    are
-                    nice here, and last but not least it has amazing beaches. I try to visit nature often as a
-                    relaxation
-                    method and keep away from daily stress
-                </p>
-                <p>
-                    I'm OBSESSED to learn and improve every day my hard/soft skills since I know that the Development
-                    field
-                    is in rapid and constant change, so it's my duty as a developer to keep always updated with the
-                    latest
-                    technologies.
-                </p>
-
-            </div>
-
-
-        </div>
-
     </div>
 
     </div>
@@ -128,10 +120,10 @@ active: home
                      alt="{{ job.company }}">
                 <div><h4 class="card-title  ls-1 text-uppercase d-inline-block fz-18 fw-800">{{ job.company }}</h4>
                     <h5 class="card-title  ls-1 text-uppercase d-block fz-12 ">{{ job.period }}</h5>
+                </div>
             </div>
+            {{job.content | markdownify}}
         </div>
-        {{job.content | markdownify}}
-    </div>
     </div>
 
 
@@ -141,187 +133,186 @@ active: home
 
 <section class="container-fluid   text-color-white 0">
     <div class="container">
-        <div class="container-fluid  py-5">
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-12">
-                        <h3 class="section-title fz-40 text-center fw-800 text-uppercase mb-5 ">
-                            Technical Skills</h3>
-                        <div class="row my-3">
-                            <div class="col-12 my-3 col-md-6">
-                                <h4 class="font-weight-bold">Front End Development</h4>
-                                <p class="fz-20">
-                                    <a href="https://www.w3.org/html/" target="_blank">HTML5</a>,
-                                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS</a>,<a
-                                        href="#" target="_blank">SASS</a>/
-                                    <a href="http://compass-style.org/" target="_blank">Compass</a>,<a href="#"
-                                                                                                       target="_blank">Neat</a>,
-                                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-                                       target="_blank">Javascript</a>,
-                                    <a href="https://es5.github.io/" target="_blank">ES5</a>,
-                                    <a href="https://www.ecma-international.org/ecma-262/6.0/" target="_blank">ES
-                                        6/2015</a>,
-                                    <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
-                                       target="_blank">Bootstrap 3/4</a>,
-                                    <a href="https://foundation.zurb.com/" target="_blank">Foundation</a>
-                                </p>
-                                <h4 class="font-weight-bold mt-4">Javascript Frameworks</h4>
-                                <p class="fz-20">
-                                    <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a>,
-                                    <a rel="noopener noreferrer" href="https://angular.io/" target="_blank">Angular</a>,
-                                    <a rel="noopener noreferrer" href="https://angularjs.org/" target="_blank">AngularJS</a>,
-                                    <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a>,
-                                    <a rel="noopener noreferrer" href="https://www.highcharts.com/" target="_blank">Highcharts.js</a>,
-                                    <a rel="noopener noreferrer" href="http://backbonejs.org/" target="_blank">Backbone.js</a>,
-                                    <a rel="noopener noreferrer" href="https://www.sencha.com/products/touch/" target="_blank">SenchaTouch</a>,
-                                    <a rel="noopener noreferrer" href="https://jquery.com/" target="_blank">jQuery</a>,
-                                    <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">Three.js</a>
-                                </p>
-                                <p class="fz-20">
-                                    <a rel="noopener noreferrer"  href="https://webpack.js.org/" target="_blank">Webpack</a>,
-                                    <a rel="noopener noreferrer"  href="https://gulpjs.com/" target="_blank">Gulp</a>,
-                                    <a rel="noopener noreferrer"  href="http://gruntjs.com/" target="_blank">Grunt</a>,
-                                    <a rel="noopener noreferrer"  href="https://babeljs.io/" target="_blank">BabelJS</a>,
-                                    <a rel="noopener noreferrer"  href="https://cli.angular.io/" target="_blank">Angular CLI</a>,
-                                    <a rel="noopener noreferrer"  href="https://nodejs.org/api/cli.html" target="_blank">Node CLI</a>
-                                </p>
-                            </div>
-                            <div class="col-12 my-3 col-md-6">
-                                <h4 class="font-weight-bold">Mobile Applications</h4>
 
 
-                                <p class="fz-20">
-                                    <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>,
-                                    <a
-                                            href="https://www.nativescript.org/" target="_blank">Nativescript</a>
+        <div class="row my-5">
+            <div class="col-12">
+                <h3 class="section-title fz-40 text-center fw-800 text-uppercase mb-5 ">
+                    Technical Skills</h3>
+
+
+            </div>
+            <div class="col-12 my-3 col-md-6">
+                <h4 class="font-weight-bold">Front End Development</h4>
+                <p class="fz-20">
+                    <a href="https://www.w3.org/html/" target="_blank">HTML5</a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS</a>,<a
+                        href="#" target="_blank">SASS</a>/
+                    <a href="http://compass-style.org/" target="_blank">Compass</a>,<a href="#"
+                                                                                       target="_blank">Neat</a>,
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                       target="_blank">Javascript</a>,
+                    <a href="https://es5.github.io/" target="_blank">ES5</a>,
+                    <a href="https://www.ecma-international.org/ecma-262/6.0/" target="_blank">ES
+                        6/2015</a>,
+                    <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+                       target="_blank">Bootstrap 3/4</a>,
+                    <a href="https://foundation.zurb.com/" target="_blank">Foundation</a>
+                </p>
+                <h4 class="font-weight-bold mt-4">Javascript Frameworks</h4>
+                <p class="fz-20">
+                    <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a>,
+                    <a rel="noopener noreferrer" href="https://angular.io/" target="_blank">Angular</a>,
+                    <a rel="noopener noreferrer" href="https://angularjs.org/" target="_blank">AngularJS</a>,
+                    <a rel="noopener noreferrer" href="https://reactjs.org/" target="_blank">React</a>,
+                    <a rel="noopener noreferrer" href="https://www.highcharts.com/" target="_blank">Highcharts.js</a>,
+                    <a rel="noopener noreferrer" href="http://backbonejs.org/" target="_blank">Backbone.js</a>,
+                    <a rel="noopener noreferrer" href="https://www.sencha.com/products/touch/" target="_blank">SenchaTouch</a>,
+                    <a rel="noopener noreferrer" href="https://jquery.com/" target="_blank">jQuery</a>,
+                    <a rel="noopener noreferrer" href="https://threejs.org/" target="_blank">Three.js</a>
+                </p>
+                <p class="fz-20">
+                    <a rel="noopener noreferrer" href="https://webpack.js.org/" target="_blank">Webpack</a>,
+                    <a rel="noopener noreferrer" href="https://gulpjs.com/" target="_blank">Gulp</a>,
+                    <a rel="noopener noreferrer" href="http://gruntjs.com/" target="_blank">Grunt</a>,
+                    <a rel="noopener noreferrer" href="https://babeljs.io/" target="_blank">BabelJS</a>,
+                    <a rel="noopener noreferrer" href="https://cli.angular.io/" target="_blank">Angular CLI</a>,
+                    <a rel="noopener noreferrer" href="https://nodejs.org/api/cli.html" target="_blank">Node
+                        CLI</a>
+                </p>
+            </div>
+            <div class="col-12 my-3 col-md-6">
+                <h4 class="font-weight-bold">Mobile Applications</h4>
+
+
+                <p class="fz-20">
+                    <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>,
+                    <a
+                            href="https://www.nativescript.org/" target="_blank">Nativescript</a>
+            </div>
+            <div class="col-12 my-3 col-md-6">
+                <h4 class="font-weight-bold">Back-end Development</h4>
+                <p class="fz-20">
+                    <a rel="noopener noreferrer" href="https://nodejs.org/es/" target="_blank">Node</a>,
+                    <a rel="noopener noreferrer" href="http://php.net/" target="_blank">PHP</a>,
+                    <a rel="noopener noreferrer" href="https://www.ruby-lang.org" target="_blank">Ruby</a>,
+                    <a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a>,
+                    <a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+                       target="_blank">.NET
+                        C#</a>
+                </p>
+            </div>
+            <div class="col-12 my-3 col-md-6">
+                <h4 class="font-weight-bold">Databases</h4>
+                <p class="fz-20">
+                    <a rel="noopener noreferrer" href="https://www.mongodb.com/" target="_blank">MongoDB</a>,
+                    <a rel="noopener noreferrer" href="https://www.mysql.com/" target="_blank">MySQL</a>,
+                    <a rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server"
+                       target="_blank">MS SQL
+                        Server</a>,
+                    <a rel="noopener noreferrer" href="https://aws.amazon.com/dynamodb/" target="_blank">DynamoDB
+                        S3</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section class="container">
+    <div class="row">
+        <div class="col-12"><h3 class="section-title fz-40 text-center fw-800 text-uppercase mb-5 ">Global
+            Clients</h3></div>
+
+        <div class="container-fluid">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6  col-12">
+                                <a href="http://www.darwinzone.com/" target="_blank"><img
+                                        alt="Darwing by Lionbridge"
+                                        src="{{ site.url }}/img/clients/darwin.jpg"
+                                        alt=""/></a>
                             </div>
-                            <div class="col-12 my-3 col-md-6">
-                                <h4 class="font-weight-bold">Back-end Development</h4>
-                                <p class="fz-20">
-                                    <a rel="noopener noreferrer" href="https://nodejs.org/es/" target="_blank">Node</a>,
-                                    <a rel="noopener noreferrer" href="http://php.net/" target="_blank">PHP</a>,
-                                    <a rel="noopener noreferrer" href="https://www.ruby-lang.org" target="_blank">Ruby</a>,
-                                    <a rel="noopener noreferrer" href="https://www.python.org/" target="_blank">Python</a>,
-                                    <a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">.NET
-                                        C#</a>
-                                </p>
+                            <div class="col-md-4 col-12 text-center text-md-left">
+                                <a href="http://stance.com/" target="_blank"><img alt="Stance Socks"
+                                                                                  src="{{ site.url }}/img/clients/stance.jpg"
+                                                                                  alt=""/></a>
                             </div>
-                            <div class="col-12 my-3 col-md-6">
-                                <h4 class="font-weight-bold">Databases</h4>
-                                <p class="fz-20">
-                                    <a rel="noopener noreferrer"  href="https://www.mongodb.com/" target="_blank">MongoDB</a>,
-                                    <a rel="noopener noreferrer"  href="https://www.mysql.com/" target="_blank">MySQL</a>,
-                                    <a rel="noopener noreferrer"  href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank">MS SQL
-                                        Server</a>,
-                                    <a rel="noopener noreferrer"  href="https://aws.amazon.com/dynamodb/" target="_blank">DynamoDB S3</a>
-                                </p>
+                            <div class="col-lg-4 col-md-6  col-12">
+                                <img src="{{ site.url }}/img/clients/tansler.jpg" class="Tansler" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6  col-12">
+                                <a href="https://www.yoursecretcode.com/#/" target="_blank"><img
+                                        alt="yoursecretcode.com"
+                                        src="{{ site.url }}/img/clients/secret-code.jpg"
+                                        alt=""/></a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6  col-12">
+                                <a href="https://www.hghdesarrollos.com/" target="_blank"><img
+                                        alt="HGH Desarrollos"
+                                        src="{{ site.url }}/img/clients/hgh-desarrollos.jpg"
+                                        alt=""/></a>
+                            </div>
+                            <div class="col-md-4 col-12 text-center text-md-left">
+                                <a href="https://www.facebook.com/pages/biz/la-uruca/Talento-Humano-SA-161240407271506/"
+                                   target="_blank"><img alt="Talento Humano"
+                                                        src="{{ site.url }}/img/clients/talento-humano.jpg"
+                                                        alt=""/></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6  col-12">
+                                <a href="https://www.simetryropadeportiva.com/" target="_blank"><img
+                                        alt="Simetry Sportswear"
+                                        src="{{ site.url }}/img/clients/simetry.jpg"
+                                        alt=""/></a>
                             </div>
 
 
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                   data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                   data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
         </div>
 
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12"><h3 class="section-title fz-40 text-center fw-800 text-uppercase mb-5 ">Global
-                        Clients</h3></div>
+    </div>
+</section>
+<section>
+    <div class="container py-2">
+        <h3 class="section-title fz-40 text-center fw-800 text-uppercase mb-5">Contact Me</h3>
+        <div class="row mt-4">
+            <div class="col-12 text-center fz-24 text-uppercase font-weight-bold">
 
-                    <div class="container-fluid">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6  col-12">
-                                            <a href="http://www.darwinzone.com/" target="_blank"><img
-                                                    alt="Darwing by Lionbridge"
-                                                    src="{{ site.url }}/img/clients/darwin.jpg"
-                                                    alt=""/></a>
-                                        </div>
-                                        <div class="col-md-4 col-12 text-center text-md-left">
-                                            <a href="http://stance.com/" target="_blank"><img alt="Stance Socks"
-                                                                                              src="{{ site.url }}/img/clients/stance.jpg"
-                                                                                              alt=""/></a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6  col-12">
-                                            <img src="{{ site.url }}/img/clients/tansler.jpg" class="Tansler" alt=""/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6  col-12">
-                                            <a href="https://www.yoursecretcode.com/#/" target="_blank"><img
-                                                    alt="yoursecretcode.com"
-                                                    src="{{ site.url }}/img/clients/secret-code.jpg"
-                                                    alt=""/></a>
-                                        </div>
+                <a href="mailto:jayson.monterroso@gmail.com" target="_blank" rel="noreferrer noopenner"
+                   class="btn btn-outline-success btn-lg ">Contact me!</a>
 
-                                        <div class="col-lg-4 col-md-6  col-12">
-                                            <a href="https://www.hghdesarrollos.com/" target="_blank"><img
-                                                    alt="HGH Desarrollos"
-                                                    src="{{ site.url }}/img/clients/hgh-desarrollos.jpg"
-                                                    alt=""/></a>
-                                        </div>
-                                        <div class="col-md-4 col-12 text-center text-md-left">
-                                            <a href="https://www.facebook.com/pages/biz/la-uruca/Talento-Humano-SA-161240407271506/"
-                                               target="_blank"><img alt="Talento Humano"
-                                                                    src="{{ site.url }}/img/clients/talento-humano.jpg"
-                                                                    alt=""/></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6  col-12">
-                                            <a href="https://www.simetryropadeportiva.com/" target="_blank"><img
-                                                    alt="Simetry Sportswear"
-                                                    src="{{ site.url }}/img/clients/simetry.jpg"
-                                                    alt=""/></a>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                               data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                               data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
         </div>
 
-        <div class="container-fluid py-5 ">
-            <div class="container">
-                <div class="container py-2">
-                    <h3 class="section-title fz-40 text-center fw-800 text-uppercase mb-5">Contact Me</h3>
-                    <div class="row mt-4">
-                        <div class="col-12 text-center fz-24 text-uppercase font-weight-bold">
 
-                            <a href="mailto:jayson.monterroso@gmail.com" target="_blank" rel="noreferrer noopenner"
-                               class="btn btn-outline-success btn-lg ">Contact me!</a>
-
-                        </div>
-                    </div>
+        <!--/row-->
+    </div>
+</section>
 
 
-                    <!--/row-->
-                </div>
-            </div>
-        </div>
