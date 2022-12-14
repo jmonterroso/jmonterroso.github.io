@@ -6,25 +6,18 @@ title: Freelance Projects | Jayson Monterroso | Software Developer
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="section-title fz-40 text-center fw-800 text-uppercase mb-3">Projects</h1>
-                <h2 class="fz-18">As a developer I have worked as a freelancer or contractor for some clients who have trusted me with
-                    their product, </h2>
+                <h1 class="section-title fz-32 text-center fw-800 text-uppercase mb-3">Projects</h1>
             </div>
         </div>
 
 
         {% assign projects = (site.projects | sort: 'date') | reverse %}
         {% for project in projects %}
-        <div class="row my-5 py-5">
+        <div class="row mb-3">
             <div class="col-lg-12 col-12 d-flex my-3">
-
-                <div class="col-md-4 col-12 text-center">
-                    <img class="img-fluid" src="{{ site.url }}/{{ project.company_logo }}" alt="{{ project.company }}">
-                    <h4 class="card-title  ls-1">{{ project.company }}</h4>
-                    <h5 class="card-title  ls-1 text-uppercase">{{ project.position }}</h5>
-                </div>
-                <div class="col-md-8 col-12">
-                    <h6>{{ project.period }}</h6>
+                <div class="col-12">
+                    <p class="fz-24 "><span class="font-weight-bold">{{project.position }}</span> | {{project.company}}</p>
+                    <p>{{ project.period }}</p>
                     <p class="">
 
                         {{ project.content }}
@@ -32,6 +25,7 @@ title: Freelance Projects | Jayson Monterroso | Software Developer
                     </p>
                 </div>
             </div>
+
 
 
         </div>

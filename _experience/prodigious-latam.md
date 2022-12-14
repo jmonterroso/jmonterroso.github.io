@@ -7,17 +7,10 @@ position: Principal Layer Engineer
 period: 2013 - 2016
 company_logo: img/prodigious-logo.jpg
 ---
+- Migrated marketing website from .NET to Java architecture, improving scalability and deployment for the client (smartusa.com)
+- Led UI planning, development, testing, and bug-fixing efforts
+- Developed multiple Facebook social applications and games to support digital marketing strategy
+- Created 3D interior viewer using three.js to enhance customer experience on website
+- Conducted A/B testing campaigns and iterated on UI changes based on tracking analysis and client requests
 
-
-
-### **Principal Layer Engineer @ Razorfish**
-
-I worked as Principal Developer for maintenance and include new functionality for the US Website, smartusa.com, I helped to redesign and migrate the old website, from using an ASP.net to a Java Platform, also created the UI components to be used across the site, also  UI planning, development, testing, and bug fixing as part of my duties too.
-
-Created multiple facebook social applications and social games using HTML5, CSS, Javascript.
-
-Created 3D vehicle interior viewer on the website using three.js library.
-
-Implementation of changes per client request based on design comps provided
-
-**Stack of technologies:** AngularJS/Three.js/CSS3/SCSS(BEM)/Neat/ Javascript/CoffeeScript/HTML5
+**Technologies:** AngularJS/Three.js, CSS3/SCSS(BEM), Neat, CoffeeScript, and HTML5

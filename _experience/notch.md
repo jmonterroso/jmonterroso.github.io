@@ -7,18 +7,10 @@ position: Software Engineer
 period: 2022 - Current
 company_logo: img/notch-logo.png
 ---
+- Implemented the Adding Payment Methods module to the product platform, from scratch to production-ready, using the Balance B2B Payment solution.
+- Migrated several web applications to be used in the iOS/Android Apps, resulting in a 60% decrease in time-to-market and a more developer-friendly environment.
+- Conducted research and testing on Enzyme JS to ensure code coverage and test unit stability, increasing the coverage percentage from 15% to 80%.
+- Built the shared UI library for all mobile and web products, using Tailwind UI, to support design consistency throughout the customer experience, decreasing development time by 60% as well as increasing reliability
+- Developed new shop experience from scratch using modern libraries, improving mobile experience and reducing customer friction for both native and web users
 
-
-### **Software Engineer**
-
-notch simplifies wholesale food and beverage orders for restaurants and suppliers of all sizes. Make all your orders, chat, and pay in one place.
-
-Helped to implement and led the implementation of Unit Testing for the product WebApp.
-
-Collaborating with the product team in the full cycle of planning, development, testing, and deployment.
-
-Implemented the module of Add Payment Methods to the product platform, using Balance B2B Payment solution.
-
-Leading the initiative and architecture of the implementation of a consolidated mobile platform, to improve the customer's experience and developer fast-paced development with the product WebApp.
-
-**Technologies:** React, Redux, Typescript, Styled Components, Jest, Enzyme, Kubernetes, Python, Go, GCP.
+**Technologies:** React, Redux, Typescript, Storybook, Styled Components, Jest, Enzyme, Testing Library, Kubernetes, AWS.

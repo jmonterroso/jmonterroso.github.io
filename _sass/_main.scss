@@ -8,10 +8,13 @@
 @import "navigation";
 
 main > section {
-  margin-bottom: 128px;
+  margin-bottom: 48px;
+  p, li{
+     line-height: 1.8!important;
+  }
 }
 
 
 .experience-row {
-  margin-bottom: 128px;
+  margin-bottom: 48px;
 }

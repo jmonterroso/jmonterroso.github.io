@@ -7,12 +7,8 @@ position: Full Stack Developer
 period: 2010-2011 
 company_logo: img/latitude-ten-north-logo.jpg
 ---
+- Evaluated project technological environments and provided development stack and timeline estimates
+- Developed websites for political parties from scratch using PHP frameworks and CMS such as WordPress and Expression Engine, meeting client requirements for backend and frontend functionality
+- Provided support and maintenance for religious and political non-profit websites in the US, including implementing new functionality and fixing bugs
 
-### **Full Stack Developer @ Act Right/Ohio GOP**
-
-Responsible for evaluating the technological environment and scope of the projects and suggest possible development stacks along with timelines. And implementation of the solution.
-
-Web Developer (using PHP and CMS based on PHP Wordpress/Expression Engine) creating functional backend/frontend websites based on detailed requirements from clients.
-
-Worked for several religious and political  projects organisations in the United States (Ohio GOP/Good Samaritan)
-
+**Technologies:** HTML/5, CSS3, jQuery, Javascript, PHP, and MySQL

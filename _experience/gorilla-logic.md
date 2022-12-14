@@ -9,18 +9,20 @@ company_logo: img/gorilla-logic-logo.jpg
 ---
 
 
-### **Development Lead @ Serena and Lily**
+**Development Lead @ Serena and Lily**
 
-Provide assistance and guidance to other developers in the team by implementing and evaluate best practices to optimize the development and the software product, implemented peer reviews to reduce the number of dev defects, in charge of maintenance of the existing eCommerce Website using Salesforce Commerce Cloud Platform (Demandware), analysis and creation of new functionality and cartridges. Implementation of new modules. Implementation of Transactional Emails by using a third party vendor.
+- Developed sales estimates module to streamline and improve manual process for sales reps 
+- Mentored and led a team of 5 software engineers, helping them build new functionality and improve coding practices 
+- Significantly improved load speed of e-commerce website from 10 seconds to 2 seconds 
+- Created design advice functionality, enabling customers to ask for design advice and share pictures of spaces for redesigning
 
-**Stack of technologies:** Node Rhino, Java, ES6, SCSS, HTML, Salesforce Commerce Cloud
+**Technologies:** Salesforce Commerce Cloud, Node.js Rhino, Javascript, Webpack, Sendgrid API.
 
-### **Software Developer @ Splunk**
+**Software Developer @ Splunk**
 
-Head of Web Development for marketing for Splunk + VictorOps company, I was in the full development cycle of the redesigning and migrating the main marketing website, migrating from a Wordpress CMS to a Jamstack Architecture, using Jekyll as Static Generator. 
+- Served as Head of Web Development for marketing for Splunk + VictorOps, overseeing redesign and migration of main marketing website from WordPress to Jamstack approach using Jekyll static generator
+- Planned and implemented global UI components, optimizing website performance and ensuring accessibility compliance (ADA) in all aspects of design and structure
+- Migrated content from WordPress to Jekyll static generator, connected to Contentful for content management
+- Skilled in leading full development cycle, including planning, implementation, and testing
 
-Involved in planning and implementing global UI components, best practices to optimize the website performance, keeping in mind accessibility in every aspect of the design and website structure (ADA). 
-
-Migration of content from WordPress into Jekyll Static Generator and implemented the connection with an API CMS (Contentful) 
-
-**Stack of technologies:** Node, Jekyll(Ruby), ES6, SCSS, HTML, Netlify, Contentful API
+**Technologies:** Node, Jekyll(Ruby), ES6, SCSS, HTML, Netlify, Contentful Api
