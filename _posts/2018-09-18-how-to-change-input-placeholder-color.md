@@ -62,4 +62,4 @@ The pseudo element `::placeholder` is the key in this example, it needs to be us
 Thanks for reading this post hope it helps you a bit to understand more about placeholder styles. Have a blessed day!
 
 
-Jayson
+Jay

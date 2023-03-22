@@ -160,4 +160,4 @@ And that's it it will generate a form like this
 
 Thanks for reading this post hope it help you a bit to understand forms in angular. Have an amazing day!
 
-Jayson
+Jay

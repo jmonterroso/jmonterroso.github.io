@@ -42,10 +42,10 @@ function welcome(name){
     console.log(`Welcome ${name}`);
 }
 
-welcome`Jayson`
-// Welcome Jayson
+welcome`Jay`
+// Welcome Jay
 // OR using a space 
-welcome `Jayson`
+welcome `Jay`
 ``` 
 
 Amazing right?, but that's not the only use you can have with template strings, We also can pass any number of variables to a function concatenated in the string lets see how it works:

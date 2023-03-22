@@ -39,4 +39,4 @@ The approach used to deploy the static website is to trick Heroku to think this 
 
 Thanks for reading this post if you have questions feel free to let me know, the best
 
-Jayson
+Jay

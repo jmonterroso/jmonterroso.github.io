@@ -47,4 +47,4 @@ Using css will be something like:
 Hope it makes sense if not let me know in the comments, have a wonderful day you all!
 
 
-Jayson
+Jay

@@ -64,4 +64,4 @@ The caret (^), on the other hand, is more relaxed. It will update you to the mos
 Thanks for reading this post hope it help you a bit to understand forms in angular. Have an amazing day!
 
 
-Jayson
+Jay
