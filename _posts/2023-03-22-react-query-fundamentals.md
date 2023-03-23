@@ -12,10 +12,6 @@ permalink: /en/react-query-fundamentals
 ---
 
 
-
-# Fundamentals of React Query
-
-
 #### TL;DR
 
 React Query is a library that simplifies the process of fetching and caching data in React applications. It provides hooks and utilities to manage server state, fetch data from APIs, and keep the UI in sync with server state. Examples of using the useQuery and useMutation hooks were provided.
