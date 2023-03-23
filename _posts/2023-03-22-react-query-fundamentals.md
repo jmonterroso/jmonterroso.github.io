@@ -13,7 +13,7 @@ permalink: /en/react-query-fundamentals
 
 
 
-# Fundamentals of React Query and Easy Example Code
+# Fundamentals of React Query
 
 
 #### TL;DR
