@@ -19,7 +19,7 @@ React Query is a library that simplifies the process of fetching and caching dat
 ## Introduction
 React Query is a library that simplifies the process of fetching and caching data in your React applications. It provides a set of hooks and utilities that allow you to easily manage server state, fetch data from your API, and keep your UI in sync with your server state.
 
-Installation
+## Installation
 To get started with React Query, you need to install it in your project. You can do this by running the following command in you
 
 ```shell
