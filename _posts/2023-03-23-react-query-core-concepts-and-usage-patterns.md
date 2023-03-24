@@ -51,4 +51,3 @@ React Query is a powerful and flexible tool for managing data in React applicati
 
 
 
-Regenerate
