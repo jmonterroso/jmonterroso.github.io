@@ -11,9 +11,6 @@ lang: en
 permalink: /en/react-query-core-concepts-and-usage-patterns
 ---
 
-## TLDR: 
-React Query is a library that simplifies data management in React applications by providing caching, invalidation, and mutation tools. It offers a simple API, improves performance, and is flexible enough to work with various data sources.
-
 ## Introduction
 React Query is a library that helps developers manage data in their React applications. It provides a set of tools and patterns that allow developers to easily fetch, cache, and update data from various sources, such as APIs or databases.
 
@@ -49,5 +46,5 @@ Some of the key features of React Query include:
 
 React Query is a powerful and flexible tool for managing data in React applications. Its simple API, caching and invalidation features, and mutation tools make it easy to handle a wide range of data sources and update data on the server. By using React Query, developers can improve the performance and scalability of their applications, while reducing the complexity of their code.
 
-
-
+## TLDR:
+React Query is a library that simplifies data management in React applications by providing caching, invalidation, and mutation tools. It offers a simple API, improves performance, and is flexible enough to work with various data sources.
