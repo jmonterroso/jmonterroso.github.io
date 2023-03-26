@@ -107,29 +107,6 @@ function App() {
 
 In this example, we use the staleTime option to ensure that query data remains fresh for 5 minutes before it is refetched.
 
-### Debouncing
-The debounce option can be used to debounce query requests, which can be useful for reducing network usage.
-
-```jsx
-import { useQuery } from 'react-query';
-
-function App() {
-    const { data } = useQuery('todos', fetchTodos, {
-    debounce: 1000, // debounce query requests for 1 second
-    });
-
-    return (
-        <ul>
-            {data.map(todo => (
-                <li key={todo.id}>{todo.title}</li>
-            ))}
-        </ul>
-    );
-}
-```
-
-
-In this example, we use the `debounce` option to debounce query requests for 1 second.
 
 ## Debugging Performance Issues in React Query
 
