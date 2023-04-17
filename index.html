@@ -12,8 +12,8 @@ active: home
         <img src="/img/profile-pic.jpg" alt="jayson's avatar"
              class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"/>
         <div class="mt-9 text-left">
-            <h1 class="text-5xl  font-bold mb-2">Jay Mont </h1>
-            <h2 class="text-2xl">Front End Engineer</h2>
+            <h1 class="text-5xl  font-bold mb-2 tracking-tight">Jay Mont </h1>
+            <h2 class="text-2xl tracking-tight">Front End Engineer</h2>
             <div class="flex gap-6 mt-4 dark:text-zinc-400 h-6 text-xl ">
                 <a aria-label="Github Profile" href="https://github.com/{{ site.github_username }}"
                    rel="noreferrer noopener" target="_blank"><i class="fab fa-github"></i></a>
@@ -38,7 +38,7 @@ active: home
 <div class="flex lg:flex-row flex-col gap-4 mt-10">
     <section class="mt-5 lg:mt-0 lg:w-7/12" id="about-me">
         <div>
-            <div class=" flex flex-col gap-4 dark:text-zinc-400">
+            <div class=" flex flex-col gap-4 dark:text-zinc-400 leading-7">
                 <p>
                     Hello there! I'm Jay Mont, a software developer with 15 years of experience. I'm passionate about
                     creating stunning UI designs that not only look good, but also reduce friction for users. From
@@ -80,7 +80,11 @@ active: home
             {% assign jobs = (site.experience | sort: 'date') | reverse %}
             {% for job in jobs %}
             <div class="flex gap-2 items-center">
-                <div class="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"></div>
+                <div class="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                    <img class="h-8 w-8 rounded-full object-contain bg-white " src="{{site.url}}/{{ job.company_logo }}"
+                         alt="{{ project.name }}">
+
+                </div>
                 <div class="w-full">
                     <h4 class=" text-sm font-bold">{{job.company}}</h4>
                     <div class="flex items-center justify-between text-xs">
