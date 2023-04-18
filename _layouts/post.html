@@ -3,35 +3,12 @@ layout: core
 cls: post
 ---
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12  mx-auto">
-
-            <h1 class="fw-900"> {{ page.title }}</h1>
-            <p class="my-4">{{ page.date | date: '%d %B, %Y' }} |  {{ page.reading_time }} read</p>
-            {{ content }}
-            {% if page.comments %}
-                <div id="disqus_thread"></div>
-                <script>
-
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                    var disqus_config = function () {
-                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    };
-                    */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://jayson-website.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            {% endif %}
+<div class="mx-auto max-w-2xl lg:max-w-5xl sm:px-8 mt-16 lg:mt-32">
+    <div>
+        <div class="mx-auto max-w-2xl">
+            <time datetime="2022-09-05" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"><span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span><span class="ml-3">{{ page.date | date: '%d %B, %Y' }} - {{ page.reading_time }} read</span></time>
+            <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">{{page.title}}</h1>
+            <div class="mt-8 prose dark:prose-invert leading-7 dark:text-zinc-400">{{ content }}</div>
         </div>
     </div>
 </div>

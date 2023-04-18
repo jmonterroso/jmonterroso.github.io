@@ -2,46 +2,47 @@
 layout: core
 title: Freelance Projects | Jay Mont | Software Developer
 ---
-<div class="container-fluid">
-    <div class="container">
-        <div class="mb-8">
-            <div class="max-w-2xl">
-                <h1 class="text-5xl font-bold tracking-tight mb-4">Unleashing creativity: my journey in software development</h1>
-                <p class="dark:text-zinc-400 leading-7">Explore my journey in software development through some of my most fascinating and innovative projects.</p>
+
+
+<div class="mb-8">
+    <div class="max-w-2xl">
+        <h1 class="text-5xl font-bold tracking-tight mb-4">Unleashing creativity: my journey in software
+            development</h1>
+        <p class="dark:text-zinc-400 leading-7">Explore my journey in software development through some of my most
+            fascinating and innovative projects.</p>
+    </div>
+</div>
+
+
+{% assign projects = (site.projects | sort: 'date') | reverse %}
+{% for project in projects %}
+<div class="row mb-10">
+    <div class="col-lg-12 col-12 d-flex my-3">
+        <div class="col-12">
+            <div class="relative flex h-12 w-12 mb-3.5 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <img class="h-10 w-10 rounded-full" src="{{site.url}}/{{ project.company_logo }}"
+                     alt="{{ project.name }}">
             </div>
-        </div>
-
-
-        {% assign projects = (site.projects | sort: 'date') | reverse %}
-        {% for project in projects %}
-        <div class="row mb-10">
-            <div class="col-lg-12 col-12 d-flex my-3">
-                <div class="col-12">
-                    <div class="relative flex h-12 w-12 mb-3.5 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                        <img class="h-10 w-10 rounded-full" src="{{site.url}}/{{ project.company_logo }}"
-                             alt="{{ project.name }}">
-                    </div>
-                    <div class="flex gap-3 items-center">
-                        <div class="w-full">
-                            <p class="text-base font-medium mb-3 ">
-                                <span class="mb-3 dark:text-zinc-400 text-sm flex gap-3 items-center"> {{project.company}} <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500 block"></span> {{ project.date | date: '%Y' }}   </span>
-                                <span
-                                    class="font-weight-bold">{{project.position }}</span>
-                                </p>
-                        </div>
-                    </div>
-
-                    <div class="dark:text-zinc-400 text-sm leading-6">
-                        {{ project.content }}
-
-                    </div>
+            <div class="flex gap-3 items-center">
+                <div class="w-full">
+                    <p class="text-base font-medium mb-3 ">
+                        <span class="mb-3 dark:text-zinc-400 text-sm flex gap-3 items-center"> {{project.company}} <span
+                                class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500 block"></span> {{ project.date | date: '%Y' }}   </span>
+                        <span
+                                class="font-weight-bold">{{project.position }}</span>
+                    </p>
                 </div>
             </div>
 
+            <div class="dark:text-zinc-400 text-sm leading-6">
+                {{ project.content }}
 
-
+            </div>
         </div>
-        {% endfor %}
-
     </div>
+
+
 </div>
+{% endfor %}
+
+
