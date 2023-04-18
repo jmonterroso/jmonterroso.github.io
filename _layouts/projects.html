@@ -4,7 +4,7 @@ title: Freelance Projects | Jay Mont | Software Developer
 ---
 
 
-<div class="mb-8">
+<div class="mb-8 lg:mt-32">
     <div class="max-w-2xl">
         <h1 class="text-5xl font-bold tracking-tight mb-4">Unleashing creativity: my journey in software
             development</h1>
@@ -13,10 +13,10 @@ title: Freelance Projects | Jay Mont | Software Developer
     </div>
 </div>
 
+<div class="flex max-w-3xl flex-col space-y-16">
+    {% assign projects = (site.projects | sort: 'date') | reverse %}
+    {% for project in projects %}
 
-{% assign projects = (site.projects | sort: 'date') | reverse %}
-{% for project in projects %}
-<div class="row mb-10">
     <div class="col-lg-12 col-12 d-flex my-3">
         <div class="col-12">
             <div class="relative flex h-12 w-12 mb-3.5 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
@@ -42,7 +42,7 @@ title: Freelance Projects | Jay Mont | Software Developer
     </div>
 
 
+    {% endfor %}
 </div>
-{% endfor %}
 
 
