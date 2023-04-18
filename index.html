@@ -66,9 +66,9 @@ active: home
     </section>
     <section id="experience" class="mt-8 lg:mt-0  lg:w-5/12">
         <div class="space-y-6 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 items-center">
+            <h3 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 items-center">
                 <span class="h-6 w-6"><i class="h-6 w-6 flex-none fas fa-laptop dark:text-zinc-500 "></i></span>
-                <span class="ml-3">Work</span></h2>
+                <span class="ml-3">Work</span></h3>
             {% assign jobs = (site.experience | sort: 'date') | reverse %}
             {% for job in jobs %}
             <div class="flex gap-2 items-center">
@@ -78,7 +78,7 @@ active: home
 
                 </div>
                 <div class="w-full">
-                    <h4 class=" text-sm font-bold">{{job.company}}</h4>
+                    <h3 class=" text-sm font-bold">{{job.company}}</h3>
                     <div class="flex items-center justify-between text-xs">
                         <div class=" dark:text-zinc-400">{{job.position }}</div>
                         <div class=" dark:text-zinc-400">{{job.period}}</div>
