@@ -12,5 +12,6 @@ company_logo: img/notch-logo.png
 - Conducted research and testing on Enzyme JS to ensure code coverage and test unit stability, increasing the coverage percentage from 15% to 80%.
 - Built the shared UI library for all mobile and web products, using Tailwind UI, to support design consistency throughout the customer experience, decreasing development time by 60% as well as increasing reliability
 - Developed new shop experience from scratch using modern libraries, improving mobile experience and reducing customer friction for both native and web users
+- Led the development of the new uploads module, creating a user interface for web and mobile and integrating with microservices endpoints. Ensured high-quality design and functionality, resulting in improved customer experience and increased efficiency.
 
 **Technologies:** React, Redux, Typescript, Storybook, Styled Components, Jest, Enzyme, Testing Library, Kubernetes, AWS.
