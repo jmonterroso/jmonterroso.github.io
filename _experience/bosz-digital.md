@@ -1,6 +1,6 @@
 ---
 title: Bosz Digital - Web Developer
-layout: core
+layout: position
 date: 2018-07-01
 company: Bosz Digital
 position: Web Developer

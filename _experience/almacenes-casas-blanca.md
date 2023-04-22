@@ -1,8 +1,8 @@
 ---
 title: Latitude Ten North - Full Stack Developer
-layout: core
 date: 2018-05-30
-company: Electrodomesticos CasaBlanca 
+company: Electrodomesticos CasaBlanca
+layout: position
 position: Full Stack Developer
 period: 2007-2010 
 company_logo: img/almacenes-casablanca-logo.jpg

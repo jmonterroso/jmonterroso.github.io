@@ -13,7 +13,7 @@ active: home
              class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16 mt-14"/>
         <div class="mt-8 text-left">
             <h1 class="text-5xl  font-bold mb-2 tracking-tight">Jay Mont </h1>
-            <h2 class="text-2xl tracking-tight font-medium">Software Engineer</h2>
+            <h2 class="text-2xl tracking-tight font-medium">Front End Engineer</h2>
             <div class="flex gap-6 mt-4 dark:text-zinc-400 h-6 text-xl ">
                 <a aria-label="Github Profile" href="https://github.com/{{ site.github_username }}"
                    rel="noreferrer noopener" target="_blank"><i class="fab fa-github"></i></a>
@@ -66,9 +66,9 @@ active: home
     </section>
     <section id="experience" class="mt-8 lg:mt-0  lg:w-5/12">
         <div class="space-y-6 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-            <h3 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 items-center">
+            <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 items-center">
                 <span class="h-6 w-6"><i class="h-6 w-6 flex-none fas fa-laptop dark:text-zinc-500 "></i></span>
-                <span class="ml-3">Work</span></h3>
+                <span class="ml-3">Work</span></h2>
             {% assign jobs = (site.experience | sort: 'date') | reverse %}
             {% for job in jobs %}
             <div class="flex gap-2 items-center">
@@ -78,7 +78,7 @@ active: home
 
                 </div>
                 <div class="w-full">
-                    <h3 class=" text-sm font-bold">{{job.company}}</h3>
+                    <h4 class=" text-sm font-bold">{{job.company}}</h4>
                     <div class="flex items-center justify-between text-xs">
                         <div class=" dark:text-zinc-400">{{job.position }}</div>
                         <div class=" dark:text-zinc-400">{{job.period}}</div>

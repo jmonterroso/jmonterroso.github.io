@@ -1,6 +1,6 @@
 ---
 title: Latitude Ten North - Full Stack Developer
-layout: core
+layout: position
 date: 2018-06-01
 company: Latitude Ten North
 position: Full Stack Developer

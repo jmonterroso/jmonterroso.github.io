@@ -1,8 +1,8 @@
 ---
 title: Prodigious Latam - Principal Layer Engineer
-layout: core
 date: 2018-07-02
 company: Accenture
+layout: position
 position: Web Developer
 period: 2011 - 2013
 company_logo: img/accenture-logo.jpg

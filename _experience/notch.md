@@ -1,6 +1,6 @@
 ---
 title: Notch - Software Engineer
-layout: core
+layout: position
 date: 2022-05-09
 company: Notch
 position: Software Engineer

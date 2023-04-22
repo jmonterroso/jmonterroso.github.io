@@ -1,6 +1,6 @@
 ---
 title: Stackhawk - Front End Engineer
-layout: core
+layout: position
 date: 2020-07-05
 company: Stackhawk
 position: Front End Engineer 
