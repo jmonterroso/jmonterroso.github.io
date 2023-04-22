@@ -27,7 +27,7 @@ The Herman Miller Aeron Chair is a top-of-the-line ergonomic chair designed for 
 Webstorm is an awesome IDE for software development with fantastic Git tools. Even though it's not free, the ease of use it provides is worth the price.
 
 ### iTerm2
-I rely on iTerm2 as my go-to terminal due to its versatility, speed, and user-friendliness. With the help of z, zsh, and oh-my-zsh plugins, I am able to customize it to my specific needs, streamlining my workflow and increasing productivity. Although it may not be a free tool, its unmatched performance and customization options make it an indispensable part of my development arsenal.
+I rely on iTerm2 as my go-to terminal due to its versatility, speed, and user-friendliness. With the help of z, zsh, and oh-my-zsh plugins, I am able to customize it to my specific needs, streamlining my workflow and increasing productivity. Its unmatched performance and customization options make it an indispensable part of my development arsenal.
 
 ### VsCode
 I use VSCode as my secondary code editor due to its simplicity and versatility. The built-in Git tools are exceptional and allow me to manage my code more efficiently. The extensive list of extensions provides a wide range of functionality and customization to tailor my development environment to my specific needs. Overall, VSCode has greatly improved my workflow and productivity, making it an essential tool for my daily work.
