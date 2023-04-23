@@ -7,11 +7,14 @@
     "@tailwindcss/typography": "^0.5.9"
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
     "tailwindcss": "^3.3.1"
   },
   "scripts": {
+    "watch:jekyll": "bundle exec jekyll server --livereload --config _config.yml,_config-dev.yml",
+    "dev": "concurrently \"npm run watch:jekyll\" \"npm run watch:tailwind\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:watch": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
+    "watch:tailwind": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
