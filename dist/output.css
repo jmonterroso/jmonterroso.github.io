@@ -1636,7 +1636,8 @@ video {
 
 .highlight,pre.highlight{
   background:#282c34;
-  color:#abb2bf
+  color:#abb2bf;
+  border-radius: 16px;
 }
 
 .highlight pre{

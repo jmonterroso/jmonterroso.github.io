@@ -54,7 +54,7 @@ It’s similar to this.setState in a class, except it doesn’t merge the old an
 
 #### Example
 
-```javascript
+```jsx
 
 import { useState } from 'react';
 
@@ -95,7 +95,7 @@ function ExampleWithManyStates() {
 
 ### Full Example
 
-```javascript
+```jsx
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
