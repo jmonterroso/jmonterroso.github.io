@@ -308,10 +308,11 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  jekyll-sitemap
   middleman-syntax
   minima (~> 2.0)
   tzinfo-data
   webrick (~> 1.7)
 
 BUNDLED WITH
-   1.16.4
+   1.17.2
