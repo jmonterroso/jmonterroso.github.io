@@ -55,14 +55,15 @@ Example: `"express": "<=4.17.1"`
 
 Use this when you need to ensure that your application is using a version of a package that is compatible with other packages in your application. This can be useful when you know that a newer version of a package may introduce compatibility issues with other packages.
 ### Approximately Equivalent
-`~version` : This matches any version that is approximately equivalent to the specified version, according to semantic versioning rules.
+`~version` : This matches any version that is approximately equivalent to the specified version, according to semantic versioning rules. This means that it accepts new patch versions but not minor or major versions.
+
 
 Example: `"react-dom": "~16.13.1"`
 
 Use this when you need to ensure that your application is using a version of a package that is compatible with other packages in your application, but you are not sure of the exact version you need. This can be useful when you want to ensure that your application uses a version of a package that is compatible with other packages, but you don't want to specify an exact version.
 
 ### Compatible With
-`^version` : This matches any version that is compatible with the specified version, according to semantic versioning rules.
+`^version` : This matches any version that is compatible with the specified version, according to semantic versioning rules. This means that it accepts new patch and minor versions but not major versions.
 
 Example: `"react-redux": "^7.2.0"`
 
