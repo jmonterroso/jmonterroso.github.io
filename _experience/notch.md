@@ -1,5 +1,5 @@
 ---
-title: Notch - Software Engineer II
+title: Software Engineer II @ Notch
 layout: position
 date: 2022-05-09
 company: Notch

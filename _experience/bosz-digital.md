@@ -1,5 +1,5 @@
 ---
-title: Bosz Digital - Web Developer
+title: Web Developer @ Bosz Digital
 layout: position
 date: 2018-07-01
 company: Bosz Digital

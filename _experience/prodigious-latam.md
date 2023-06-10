@@ -1,5 +1,5 @@
 ---
-title: Prodigious Latam - Principal Layer Engineer
+title: Principal Layer Engineer @ Prodigious Latam
 layout: position
 date: 2018-07-03
 company: Prodigious Latam

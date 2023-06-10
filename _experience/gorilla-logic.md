@@ -1,5 +1,5 @@
 ---
-title: Gorilla Logic - Software Developer
+title: Software Developer @ Gorilla Logic
 layout: position
 date: 2018-07-05
 company: Gorilla Logic

@@ -1,5 +1,5 @@
 ---
-title: Stackhawk - Front End Engineer
+title: Front End Engineer @ Stackhawk
 layout: position
 date: 2020-07-05
 company: Stackhawk

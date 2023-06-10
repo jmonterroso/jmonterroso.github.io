@@ -1,7 +1,7 @@
 ---
-title: Latitude Ten North - Full Stack Developer
+title: Full Stack Developer @ Almacenes Casa Blanca
 date: 2018-05-30
-company: Electrodomesticos CasaBlanca
+company: Almacenes CasaBlanca
 layout: position
 position: Full Stack Developer
 period: 2007-2010 

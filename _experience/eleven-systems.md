@@ -1,5 +1,5 @@
 ---
-title: Eleven Systems - Software Engineer
+title: Software Engineer @ Eleven Systems LLC
 layout: position
 date: 2018-07-04
 company: Eleven Systems LLC
