@@ -1,19 +1,22 @@
 ---
-title: Software Engineer II @ Notch
+title: Software Engineer III @ Notch
 layout: position
 date: 2022-05-09
 company: Notch
-position: Software Engineer II
-period: 2022 - Current
+position: Software Engineer III
+period: 2022 - 2025
 company_logo: img/notch-logo.png
 ---
-- Implemented the Adding Payment Methods module to the product platform, from scratch to production-ready, using the Balance B2B Payment solution.
-- Migrated several web applications to be used in the iOS/Android Apps, resulting in a 60% decrease in time-to-market and a more developer-friendly environment.
-- Conducted research and testing on Enzyme JS to ensure code coverage and test unit stability, increasing the coverage percentage from 15% to 80%.
-- Built the shared UI library for all mobile and web products, using Tailwind UI, to support design consistency throughout the customer experience, decreasing development time by 60% as well as increasing reliability
-- Developed new shop experience from scratch using modern libraries, improving mobile experience and reducing customer friction for both native and web users
-- Led the development of the new uploads module, creating a user interface for web and mobile and integrating with microservices endpoints. Ensured high-quality design and functionality, resulting in improved customer experience and increased efficiency.
-- Spearheaded the development of an OCR bills editor, enabling customers to validate digitized bills from mobile and web platforms within the platform and seamlessly sync them with other financial integrations and pay directly from the platform.
-- Developed and implemented an NPM shared library to streamline code duplication, establish standardization, and serve as a single source of truth for TypeScript types, shared functions, and logic across the diverse web and mobile platforms.
 
-**Technologies:** React, Redux, Typescript, Storybook, Styled Components, Jest, Enzyme, Testing Library, Kubernetes, AWS.
+- Designed and developed payment processing systems, including PDF generation APIs for customer invoices using cloud functions and React applications
+- Led the architecture and development of the AP/AR product platform's main company application, building robust Node.js APIs and Typescript React frontend systems with OCR capabilities, processing thousands of invoices monthly
+- Implemented an OCR bills editor with real-time collaboration capabilities, enabling seamless bill validation and integration with financial third-party systems
+- Developed responsive customer portals and supplier dashboards that improved mobile user interactions
+- Led the development of a shared UI component library, ensuring design consistency and reducing development time
+- Implemented comprehensive unit testing across the codebase, achieving high code coverage in critical systems
+- Migrated native applications to web iOS/Android apps using Capacitor, significantly reducing time-to-market and enhancing developer efficiency
+- Implemented multi-provider payment integrations (Stripe, Adyen, Balance) in both frontend and backend applications
+- Built reusable and modular components on both frontend and backend, promoting code reusability, maintainability, and scalability across a microservices architecture
+- Participated in the full software development lifecycle from product discovery, planning through deployment
+
+**Technologies:** NodeJS, Prisma React, Redux, Typescript, Storybook, Styled Components, Jest, Enzyme, Testing Library, Kubernetes, AWS
