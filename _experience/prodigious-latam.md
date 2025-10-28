@@ -6,11 +6,18 @@ company: Prodigious Latam
 position: Principal Layer Engineer
 period: 2021 - 2022
 company_logo: img/prodigious-logo.jpg
+technologies:
+  - AngularJS
+  - Three.js
+  - CSS3
+  - SCSS
+  - BEM
+  - Neat
+  - CoffeeScript
+  - HTML5
 ---
 - Migrated marketing website from .NET to Java architecture, improving scalability and deployment for the client (smartusa.com)
 - Led UI planning, development, testing, and bug-fixing efforts
 - Developed multiple Facebook social applications and games to support digital marketing strategy
 - Created 3D interior viewer using three.js to enhance customer experience on website
 - Conducted A/B testing campaigns and iterated on UI changes based on tracking analysis and client requests
-
-**Technologies:** AngularJS, Three.js, CSS3, SCSS (BEM), Neat, CoffeeScript, HTML5

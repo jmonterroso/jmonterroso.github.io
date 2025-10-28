@@ -1,11 +1,18 @@
 ---
 title: Talento Humano / Mobile Application
-layout: core
+layout: project
 date: 2017-07-02
 company: Talento Humano
 position: Mobile Developer/Fullstack Developer/ DevOps
 period: ""
 company_logo: img/clients/talento-humano.jpg
+hero_image: img/clients/talento-humano.jpg
+technologies:
+  - NativeScript
+  - Angular 4
+  - GraphQL
+  - Express
+  - Node.js
 ---
 
 I'm proud to have been the driving force behind a comprehensive software development project that involved creating a native mobile application for iOS/Android using Nativescript, as well as a single web application Back Office System to manage both the web and mobile applications. This was a challenging but exciting project that I undertook with passion and skill.

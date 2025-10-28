@@ -6,6 +6,19 @@ company: Notch
 position: Software Engineer III
 period: 2022 - 2025
 company_logo: img/notch-logo.png
+technologies:
+  - Node.js
+  - Prisma
+  - React
+  - Redux
+  - TypeScript
+  - Storybook
+  - Styled Components
+  - Jest
+  - Enzyme
+  - Testing Library
+  - Kubernetes
+  - AWS
 ---
 
 - Designed and developed payment processing systems, including PDF generation APIs for customer invoices using cloud functions and React applications
@@ -18,5 +31,3 @@ company_logo: img/notch-logo.png
 - Implemented multi-provider payment integrations (Stripe, Adyen, Balance) in both frontend and backend applications
 - Built reusable and modular components on both frontend and backend, promoting code reusability, maintainability, and scalability across a microservices architecture
 - Participated in the full software development lifecycle from product discovery, planning through deployment
-
-**Technologies:** NodeJS, Prisma React, Redux, Typescript, Storybook, Styled Components, Jest, Enzyme, Testing Library, Kubernetes, AWS

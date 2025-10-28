@@ -7,12 +7,25 @@ cls: post
     <div>
         <div class="mx-auto max-w-2xl">
             <time datetime="2022-09-05" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"><span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span><span class="ml-3">{{page.period}}</span></time>
-            <div class="flex flex-col flex-col-reverse gap-2 mt-6">
+            <div class="flex flex-col-reverse gap-2 mt-6">
                 <h1
                     class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                 {{page.position}}</h1>
                 <h2 class=" text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
                     {{page.company}}</h2></div>
+
+            <!-- Technologies -->
+            {% if page.technologies %}
+            <div class="mt-6">
+                <div class="flex flex-wrap gap-3">
+                    {% for tech in page.technologies %}
+                    <span class="inline-flex items-center rounded-lg bg-violet-50 dark:bg-violet-400/10 px-4 py-2 text-sm font-medium text-violet-700 dark:text-violet-400 ring-1 ring-inset ring-violet-700/10 dark:ring-violet-400/20">
+                        {{ tech }}
+                    </span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
 
             <div class="mt-8 prose dark:prose-invert leading-7 dark:text-zinc-400">{{ content }}</div>
         </div>

@@ -1,11 +1,17 @@
 ---
 title: tansler.com / Web Developer
-layout: core
+layout: project
 date: 2014-07-02
 company: Tansler / tansler.com
 position: Front End Developer
 period: ""
 company_logo: img/clients/tansler.jpg
+hero_image: img/clients/tansler.jpg
+technologies:
+  - AngularJS
+  - RESTful API
+  - Google Maps API
+live_url: https://tansler.com
 ---
 As a Front End Developer at Tansler (tansler.com), I was responsible for the creation, development, and coordination with the UX/Design Department/Back-End team of new features and maintenance for a real estate web application. This startup was similar to Airbnb in specs, with the only difference being that the user could bid on any number of properties, and hosts were able to decide whether to accept the bid or not. As a result, several components were created from scratch.
 

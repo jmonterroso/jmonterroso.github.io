@@ -1,11 +1,21 @@
 ---
 title: STANCE.COM / UI Developer
-layout: core
+layout: project
 date: 2015-07-02
 company: Stance Socks (stance.com)
 position: UI Developer
 period: ""
 company_logo: img/clients/stance.jpg
+hero_image: img/clients/stance.jpg
+technologies:
+  - MEAN.io
+  - Node.js
+  - Magento
+  - WordPress
+  - Grunt
+  - Foundation
+  - Compass
+live_url: https://stance.com
 ---
 
 At Stance Socks (stance.com), I served as the UI Developer responsible for the functional/UI design, creation, and maintenance of critical components for their global e-commerce website. My role involved implementing full landing pages for global campaigns and enhancing the current UI components while optimizing the styling using BEM methodology.

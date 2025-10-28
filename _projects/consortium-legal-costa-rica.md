@@ -1,11 +1,18 @@
 ---
 title: Consortium Legal/Full Stack Developer
-layout: core
+layout: project
 date: 2016-07-02
 company: Consortium Legal
 position: Full Stack Developer Consultant
 period: ""
 company_logo: img/clients/consortium-legal-costa-rica.jpg
+hero_image: img/clients/consortium-legal-costa-rica.jpg
+technologies:
+  - MongoDB
+  - Express
+  - AngularJS
+  - Node.js
+  - MEAN.JS
 ---
 I had the privilege of leading a full migration project for one of the most prestigious Law Firms in Costa Rica, where we migrated an outdated PC application (Windows Application) to a more modern and efficient Single Web Application. As the Full Stack Developer in charge of the project, I was responsible for the architecture, planning, requirements gathering, implementation, DevOps, deployment, and continuous integration of the Web Application.
 

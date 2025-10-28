@@ -1,11 +1,21 @@
 ---
 title: yoursecretcode.com
-layout: core
+layout: project
 date: 2017-07-02
 company: yoursecretcode.com
 position: Full Stack Developer Consultant
 period: ""
 company_logo: img/clients/secret-code.jpg
+hero_image: img/clients/secret-code.jpg
+technologies:
+  - Serverless Framework
+  - Node.js
+  - AWS DynamoDB
+  - AWS S3
+  - AWS Lambda
+  - MongoDB
+  - AWS
+live_url: https://yoursecretcode.com
 ---
 As a Full Stack Developer Consultant for Your Secret Code, I led the successful migration of their self-served Node instance to a Serverless Architecture using Serverless Application Framework, improving performance and reducing operational costs. Additionally, I migrated their Mongo Database to AWS DynamoDB and refactored the codebase to improve readability and maintainability.
 
