@@ -173,5 +173,145 @@
     gtag('config', 'UA-50836555-1');
 </script>
 
+<!-- Enhanced Event Tracking -->
+<script>
+    // Wait for DOM to be ready
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get site URL for internal link detection
+        const siteUrl = window.location.origin;
+        
+        // Helper function to check if link is external
+        function isExternalLink(url) {
+            if (!url) return false;
+            // Check if it's a mailto or tel link
+            if (url.startsWith('mailto:') || url.startsWith('tel:')) return true;
+            // Check if it's an absolute URL to a different domain
+            if (url.startsWith('http://') || url.startsWith('https://')) {
+                try {
+                    const linkUrl = new URL(url);
+                    return linkUrl.origin !== siteUrl;
+                } catch (e) {
+                    return false;
+                }
+            }
+            return false;
+        }
+        
+        // Helper function to check if link is a download
+        function isDownloadLink(url) {
+            if (!url) return false;
+            const downloadExtensions = ['.pdf', '.docx', '.txt', '.doc', '.zip'];
+            const lowerUrl = url.toLowerCase();
+            return downloadExtensions.some(ext => lowerUrl.includes(ext));
+        }
+        
+        // Helper function to get link type/category
+        function getLinkCategory(url, text) {
+            if (!url) return 'unknown';
+            
+            const lowerUrl = url.toLowerCase();
+            const lowerText = (text || '').toLowerCase();
+            
+            // Social media links
+            if (lowerUrl.includes('github.com')) return 'github';
+            if (lowerUrl.includes('linkedin.com')) return 'linkedin';
+            if (lowerUrl.includes('twitter.com') || lowerUrl.includes('x.com')) return 'twitter';
+            if (lowerUrl.includes('stackoverflow.com')) return 'stackoverflow';
+            if (lowerUrl.startsWith('mailto:')) return 'email';
+            
+            // Calendly
+            if (lowerUrl.includes('calendly.com')) return 'calendly';
+            
+            // Downloads
+            if (isDownloadLink(url)) {
+                if (lowerUrl.includes('resume') || lowerText.includes('resume') || lowerText.includes('cv')) {
+                    return 'resume_download';
+                }
+                return 'download';
+            }
+            
+            return 'external';
+        }
+        
+        // Track all link clicks using event delegation
+        document.addEventListener('click', function(event) {
+            const link = event.target.closest('a');
+            if (!link || !link.href) return;
+            
+            const href = link.href;
+            const linkText = link.textContent?.trim() || link.getAttribute('aria-label') || '';
+            const isExternal = isExternalLink(href);
+            const isDownload = isDownloadLink(href);
+            const category = getLinkCategory(href, linkText);
+            
+            // Track external link clicks
+            if (isExternal && !isDownload && category !== 'calendly') {
+                gtag('event', 'click', {
+                    'event_category': 'outbound',
+                    'event_label': href,
+                    'transport_type': 'beacon',
+                    'link_type': category
+                });
+            }
+            
+            // Track download events
+            if (isDownload) {
+                const fileName = href.split('/').pop().split('?')[0];
+                gtag('event', 'file_download', {
+                    'event_category': 'downloads',
+                    'event_label': fileName,
+                    'link_url': href,
+                    'file_name': fileName,
+                    'file_extension': fileName.split('.').pop(),
+                    'transport_type': 'beacon'
+                });
+            }
+            
+            // Track Calendly clicks (conversion tracking)
+            if (category === 'calendly') {
+                gtag('event', 'calendly_click', {
+                    'event_category': 'engagement',
+                    'event_label': 'Schedule Call',
+                    'event_value': 1,
+                    'transport_type': 'beacon'
+                });
+            }
+            
+            // Track social media engagement
+            if (['github', 'linkedin', 'twitter', 'stackoverflow', 'email'].includes(category)) {
+                gtag('event', 'social_click', {
+                    'event_category': 'social',
+                    'event_label': category,
+                    'transport_type': 'beacon'
+                });
+            }
+        });
+        
+        // Track experience/project card clicks on homepage
+        document.addEventListener('click', function(event) {
+            const card = event.target.closest('a[href*="/experience/"], a[href*="/projects/"]');
+            if (!card) return;
+            
+            const href = card.href;
+            const cardTitle = card.querySelector('h3')?.textContent?.trim() || '';
+            
+            if (href.includes('/experience/')) {
+                gtag('event', 'experience_view', {
+                    'event_category': 'engagement',
+                    'event_label': cardTitle,
+                    'page_path': new URL(href).pathname,
+                    'transport_type': 'beacon'
+                });
+            } else if (href.includes('/projects/')) {
+                gtag('event', 'project_view', {
+                    'event_category': 'engagement',
+                    'event_label': cardTitle,
+                    'page_path': new URL(href).pathname,
+                    'transport_type': 'beacon'
+                });
+            }
+        });
+    });
+</script>
 
 </html>
