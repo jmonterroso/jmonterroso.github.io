@@ -1,0 +1,126 @@
+JAYSON MONTERROSO
+SOFTWARE ENGINEER
+CONTACT DETAILS
+http://linkedin.com/in/jaymont
+jaysonmonterroso.com
+jayson.monterroso@gmail.com
+Alajuela, Costa Rica
+
+EXPERTISE
+Fullstack Development
+Front End Development
+Backend Development
+Team Leadership/Coaching
+Lead technical transformation initiatives
+Distributed and remote work environments
+Product development
+Agile Methodologies
+Startup growth and foundation-building
+
+TECHNICAL SKILLS
+FRONT END
+React, TypeScript, Angular, React Query, Zustand, Zod, Redux, Backbone, HTML, CSS, SCSS, Tailwind, Styled Components
+
+BACK END
+NestJS, Node.js, Prisma, Express, Go, Python
+
+DATABASES
+Postgres, MongoDB, MySQL
+
+BUNDLERS
+Webpack, Vite, Babel
+
+CMS
+WordPress, Contentful
+
+TESTING
+Jest, React Testing Library, Enzyme, Cypress
+
+CONTAINERS & ORCHESTRATION
+Docker, Kubernetes, Flux CD, Terraform
+
+CLOUD PLATFORMS
+AWS, GCP, Netlify
+
+MOBILE
+React Native, Ionic (Capacitor), NativeScript
+
+
+EDUCATION
+Bachelor of Computer Systems
+Engineering
+UNADECA | 2008 | Costa Rica
+
+SKILLS
+Problem-solving
+Strong technical vision and ability to guide teams
+Strong communication and collaboration abilities
+Strong design sensibility for Ul/ UX
+Ability to create exceptional user experiences
+Teaching
+
+LANGUAGES
+Spanish 
+Native
+
+English
+Advanced
+
+
+INTERESTS
+Family
+Travel
+Reading 
+Fitness
+Video games
+Hiking
+Soccer		PROFILE
+Experienced Software Engineer with a solid track record of delivering successful projects for global clients across various industries, including expertise with startups in their early stages. I have deep expertise in the full development life cycle, agile practices, and team leadership. I'm skilled in full-stack development, JavaScript, mobile, CI/ CD, and best coding practices. With over 18+ years of experience in web development, I'm committed to continuous learning and self-improvement and passionate about using my skills to deliver high-quality solutions.
+
+EXPERIENCE
+SENIOR SOFTWARE ENGINEER
+Intevity | Under Armour | 2025 
+•	Replaced Mulesoft APIs (events, orders, points, profiles, rewards, Snowflake, Aptos) with scalable Node.js microservices, reducing third-party licensing expenses and enabling complete in-house API ownership for faster iteration and maintainability.
+•	Developed a scalable event-driven architecture using SQS queues on AWS(SQS, SNS), consumers, and domain controllers, enhancing the throughput and reliability of loyalty microservices.
+•	Integrated microservices with core enterprise systems including PredictSpring POS, Aptos POS, UA.com, OMS, SFSC, and SFCC.
+
+SOFTWARE ENGINEER III
+Notch Financial | 2022 - 2025
+•	 Led architecture and development of AP/AR platform, building Restful APIs and react apps with OCR capabilities.
+•	Designed and implemented payment systems with PDF invoice APIs, multi-provider integrations (Stripe, Adyen, Balance), and responsive customer/supplier portals.
+•	Built OCR bills editor with real-time collaboration and third-party financial integrations, streamlining validation workflows, in a react app, 
+•	Developed shared UI component library, reusable frontend/backend components, and migrated native apps to iOS/Android web app, improving scalability and time-to-market.
+•	Ensured quality through comprehensive unit testing and active participation across the full SDLC from discovery to deployment.
+•	Built/maintain cloud infrastructure using GCP services including Cloud Storage, Cloud Tasks, Cloud Run Jobs, Cloud functions, and Secret Manager with Docker and Kubernetes deployment.
+SOFTWARE ENGINEER
+Stackhawk | 2020 - 2021
+•	Built the foundation of beta and production-ready product UI in React, integrating with gRCP microservices for security scan data.
+•	Enhanced accessibility (a11y) and collaborated with design/product teams to release new features.
+•	Led migration of marketing site from WordPress to Contentful (Headless CMS), improving load speed, SFO, and usability.
+
+SOFTWARE DEVELOPER
+Gorilla Logic | 2017 - 2020
+Development Lead @ Serena and Lily
+•	Developed SFCC sales estimate module using, reducing manual work for sales reps and improving website functionality.
+•	Enhancing site performance, load speed, accessibility, and overall user experience.
+Software Developer @ Splunk / VictorOps
+•	Leading full redesign and migration from WP to Headless CMS approach (Jekyll + Contentful + NodeJS + Netlify + React).
+•	Planned and implemented Ul library, optimizing performance and ensuring A11y compliance and consistency across projects.
+
+FRONT END ENGINEER
+Eleven Systems | 2016 - 2017
+•	Built scalable Angular modules for a large financial web application, integrating RESTful API services with complex data.
+•	Designed and implemented financial module UI/UX, including advanced chart visualizations with Highcharts and Salesforce integration.
+
+PRINCIPAL LAYER ENGINEER
+Prodigious LATAM | 2013 - 2016
+•	Redesigned and migrated smartusa.com website Ul architecture to use Java services, handling Ul planning, development, testing, and bug fixing.
+•	Built multiple Facebook social apps and games to drive engagement.
+•	Developed a 3D vehicle interior viewer using Three.js.
+
+SENIOR WEB DEVELOPER
+Accenture | 2011 - 2013
+•	Built a hybrid iOS/Android apps for Merck Pharma.
+•	Backend architecture and functionality in PHP/WordPress for costaricavacations.com, including custom plugins for Razuna CDN.
+•	 Created a SPA with Backbone.js for Gatorade to display sports scores and statistics via RESTful.
+
