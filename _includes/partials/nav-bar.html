@@ -5,13 +5,13 @@
             <nav class="flex flex-1 justify-end md:justify-center">
                 <div class="mx-auto ">
                     <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 mt-6">
-                        <li><a class="relative block px-3 py-2 transition hover:text-secondary-500 dark:hover:text-secondary-400
+                        <li><a class="relative block px-3 py-2 transition hover:text-primary-400 dark:hover:text-primary-400
             {% if page.active ==  "home" %} text-primary-500 dark:text-primary-400 {% endif %}" href="{{ site.url }}">Home
                             {% if page.active == "home" %}<span
                                     class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/40 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"></span>{%
                             endif %}
                             </a></li>
-                        <li><a href="{{ site.url }}/projects" class="relative block px-3 py-2 transition hover:text-secondary-500 dark:hover:text-secondary-400
+                        <li><a href="{{ site.url }}/projects" class="relative block px-3 py-2 transition hover:text-primary-400 dark:hover:text-primary-400
         {% if page.active ==  "projects" %} text-primary-500 dark:text-primary-400 {% endif %}">Projects
                             {% if page.active == "projects" %}<span
                                     class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/40 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"></span>{%
@@ -19,7 +19,7 @@
                             </a>
 
                         </li>
-                        <li><a class="relative block px-3 py-2 transition hover:text-secondary-500 dark:hover:text-secondary-400
+                        <li><a class="relative block px-3 py-2 transition hover:text-primary-400 dark:hover:text-primary-400
 {% if page.layout == "blog" or layout.active == "blog" %} text-primary-500 dark:text-primary-400 {% endif %}
                             " href="{{ site.url }}/blog">Blog
                             {% if page.layout == "blog" or page.active == "blog" %}<span
@@ -27,7 +27,7 @@
                             endif %}
                             </a></li>
 
-                        <li><a class="relative block px-3 py-2 transition hover:text-secondary-500 dark:hover:text-secondary-400
+                        <li><a class="relative block px-3 py-2 transition hover:text-primary-400 dark:hover:text-primary-400
 {% if page.layout == "experience" or page.layout == "position" %} text-primary-500 dark:text-primary-400 {% endif %}"
                             href="{{site.url}}/experience">Experience
                             {% if page.layout == "experience" or page.layout == "position" %}<span
@@ -35,7 +35,7 @@
                             endif %}
                             </a></li>
                         <li class="hidden lg:block"><a
-                                class="relative block px-3 py-2 transition d hover:text-secondary-500 dark:hover:text-secondary-400"
+                                class="relative block px-3 py-2 transition d hover:text-primary-400 dark:hover:text-primary-400"
                                 target="_blank" rel="noopener noreferrer"
                                 href="{{site.url}}/pdf/jayson-monterroso-resume.pdf">Resume</a></li>
                     </ul>
