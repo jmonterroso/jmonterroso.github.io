@@ -11,12 +11,12 @@ active: blog
 {% if latest_post %}
 <section class="mt-12">
     <div class="mb-6">
-        <span class="inline-flex items-center rounded-md bg-violet-50 dark:bg-violet-400/10 px-2.5 py-1 text-xs font-medium text-violet-700 dark:text-violet-400 ring-1 ring-inset ring-violet-700/10 dark:ring-violet-400/20">
+        <span class="inline-flex items-center rounded-md bg-highlight-50 dark:bg-highlight-400/10 px-2.5 py-1 text-xs font-medium text-highlight-700 dark:text-highlight-400 ring-1 ring-inset ring-highlight-700/10 dark:ring-highlight-400/20">
             Featured
         </span>
     </div>
     <a href="{{ latest_post.url }}" class="block">
-        <div class="rounded-2xl border border-zinc-100 p-8 dark:border-zinc-700/40 bg-gradient-to-br from-white to-violet-50/30 dark:from-zinc-800/50 dark:to-violet-900/10 hover:border-violet-200 dark:hover:border-violet-800 hover:shadow-lg hover:scale-[1.01] transition-all duration-200 cursor-pointer">
+        <div class="rounded-2xl border border-zinc-100 p-8 dark:border-zinc-700/40 bg-gradient-to-br from-white to-primary-50/30 dark:from-zinc-800/50 dark:to-primary-900/10 hover:border-primary-200 dark:hover:border-primary-800 hover:shadow-lg hover:scale-[1.01] transition-all duration-200 cursor-pointer">
                 <div class="flex items-center gap-3 mb-4 flex-wrap">
                     <time class="text-sm text-zinc-500 dark:text-zinc-400" datetime="{{ latest_post.date }}">
                         {{ latest_post.date | date: "%B %e, %Y" }}
@@ -32,7 +32,7 @@ active: blog
             <p class="text-base text-zinc-600 dark:text-zinc-400 leading-7 mb-6">
                 {{ latest_post.content | strip_html | truncatewords: 30 }}
             </p>
-            <div class="flex items-center gap-2 text-violet-600 dark:text-violet-400 font-medium">
+            <div class="flex items-center gap-2 text-secondary-600 dark:text-secondary-400 font-medium">
                 <span>Read article</span>
                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="h-4 w-4">
                     <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"></path>
@@ -48,7 +48,7 @@ active: blog
     <div class="grid md:grid-cols-2 gap-6">
         {% for post in remaining_posts %}
         <a href="{{ post.url }}" class="block">
-            <article class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50 hover:border-violet-200 dark:hover:border-violet-800 hover:shadow-lg hover:scale-[1.01] transition-all duration-200 cursor-pointer h-full">
+            <article class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50 hover:border-secondary-200 dark:hover:border-secondary-800 hover:shadow-lg hover:scale-[1.01] transition-all duration-200 cursor-pointer h-full">
                 <div class="flex items-center gap-3 mb-3">
                     <time class="text-sm text-zinc-500 dark:text-zinc-400" datetime="{{ post.date }}">
                         {{ post.date | date: "%B %e, %Y" }}

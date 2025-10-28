@@ -7,7 +7,7 @@ active: blog
 <div class="mx-auto max-w-2xl lg:max-w-5xl sm:px-8 mt-12 lg:mt-16 mb-16">
     <!-- Back to Blog Navigation -->
     <div class="mb-8">
-        <a href="/blog" class="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
+        <a href="/blog" class="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-secondary-600 dark:hover:text-secondary-400 transition-colors">
             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="h-4 w-4 rotate-180">
                 <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"></path>
             </svg>
@@ -22,7 +22,7 @@ active: blog
                 {% if page.categories and page.categories.size > 0 %}
                 <div class="mb-4">
                     {% for category in page.categories limit: 3 %}
-                    <span class="inline-flex items-center rounded-md bg-violet-50 dark:bg-violet-400/10 px-2.5 py-1 text-xs font-medium text-violet-700 dark:text-violet-400 ring-1 ring-inset ring-violet-700/10 dark:ring-violet-400/20 mr-2">
+                    <span class="inline-flex items-center rounded-md bg-secondary-50 dark:bg-secondary-400/10 px-2.5 py-1 text-xs font-medium text-secondary-700 dark:text-secondary-400 ring-1 ring-inset ring-secondary-700/10 dark:ring-secondary-400/20 mr-2">
                         {{ category }}
                     </span>
                     {% endfor %}
@@ -46,7 +46,7 @@ active: blog
             </header>
 
             <!-- Post Content -->
-            <div class="prose prose-zinc max-w-none dark:prose-invert prose-headings:font-bold prose-headings:text-zinc-900 dark:prose-headings:text-zinc-100 prose-p:text-zinc-700 dark:prose-p:text-zinc-300 prose-a:text-violet-600 dark:prose-a:text-violet-400 prose-strong:text-zinc-900 dark:prose-strong:text-zinc-100 prose-code:text-violet-600 dark:prose-code:text-violet-400 prose-pre:bg-zinc-900 dark:prose-pre:bg-zinc-800 prose-blockquote:border-violet-500 prose-blockquote:text-zinc-700 dark:prose-blockquote:text-zinc-300 leading-7">
+            <div class="prose prose-zinc max-w-none dark:prose-invert prose-headings:font-bold prose-headings:text-zinc-900 dark:prose-headings:text-zinc-100 prose-p:text-zinc-700 dark:prose-p:text-zinc-300 prose-a:text-secondary-600 dark:prose-a:text-secondary-400 prose-strong:text-zinc-900 dark:prose-strong:text-zinc-100 prose-code:text-primary-600 dark:prose-code:text-primary-400 prose-pre:bg-zinc-900 dark:prose-pre:bg-zinc-800 prose-blockquote:border-primary-500 prose-blockquote:text-zinc-700 dark:prose-blockquote:text-zinc-300 leading-7">
                 {{ content }}
             </div>
 

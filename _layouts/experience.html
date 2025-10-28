@@ -19,17 +19,17 @@ description: 15+ years of full-stack software engineering experience with Fortun
         <h1 class="text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-6">Experience</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
-                <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">{{ total_years }}+</div>
+                <div class="text-4xl font-bold text-accent-600 dark:text-accent-400 mb-2">{{ total_years }}+</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Years Experience</div>
                 <div class="text-xs text-zinc-600 dark:text-zinc-400">Full-stack development</div>
             </div>
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
-                <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">{{ jobs.size }}</div>
+                <div class="text-4xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">{{ jobs.size }}</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Companies</div>
                 <div class="text-xs text-zinc-600 dark:text-zinc-400">Fortune 500 & startups</div>
             </div>
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
-                <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">30+</div>
+                <div class="text-4xl font-bold text-accent-600 dark:text-accent-400 mb-2">30+</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Technologies</div>
                 <div class="text-xs text-zinc-600 dark:text-zinc-400">Modern tech stack</div>
             </div>
@@ -47,7 +47,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
         <!-- Timeline Container -->
         <div class="relative">
             <!-- Vertical Timeline Line -->
-            <div class="absolute left-[15px] top-8 bottom-8 w-0.5 bg-zinc-200 dark:bg-zinc-700"></div>
+            <div class="absolute left-[10px] top-8 bottom-8 w-0.5 bg-zinc-200 dark:bg-zinc-700"></div>
             
             <div class="space-y-8">
                 {% for job in jobs %}
@@ -55,17 +55,17 @@ description: 15+ years of full-stack software engineering experience with Fortun
                 <article class="relative pl-12" itemscope itemtype="https://schema.org/JobPosting">
                     <!-- Timeline Dot -->
                     {% if is_current == 0 %}
-                    <div class="absolute left-0 top-6 h-8 w-8 rounded-full bg-violet-500 dark:bg-violet-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center">
-                        <div class="h-3 w-3 rounded-full bg-white"></div>
+                    <div class="absolute left-0 top-6 h-5 w-5 rounded-full bg-primary-500 dark:bg-primary-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center">
+                        <div class="h-1.5 w-1.5 rounded-full bg-white"></div>
                     </div>
                     {% else %}
-                    <div class="absolute left-0 top-6 h-8 w-8 rounded-full bg-zinc-300 dark:bg-zinc-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center">
-                        <div class="h-3 w-3 rounded-full bg-white"></div>
+                    <div class="absolute left-0 top-6 h-5 w-5 rounded-full bg-zinc-300 dark:bg-zinc-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center">
+                        <div class="h-1.5 w-1.5 rounded-full bg-white"></div>
                     </div>
                     {% endif %}
                     
                     <a href="{{ job.url }}" class="block">
-                        <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50 hover:border-violet-200 dark:hover:border-violet-800 hover:shadow-lg transition-all cursor-pointer">
+                        <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 {% if is_current == 0 %}bg-gradient-to-br from-white to-primary-50/30 dark:from-zinc-800/50 dark:to-primary-900/10{% else %}bg-white dark:bg-zinc-800/50{% endif %} hover:border-primary-200 dark:hover:border-primary-800 hover:shadow-lg transition-all cursor-pointer">
                             <!-- Logo and Header -->
                             <div class="flex items-start gap-4 mb-4">
                                 {% if job.company_logo %}
@@ -74,8 +74,8 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                      class="h-12 w-12 rounded-lg object-contain bg-white p-1 flex-shrink-0"
                                      itemprop="image">
                                 {% else %}
-                                <div class="h-12 w-12 rounded-lg bg-violet-100 dark:bg-violet-900/20 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-violet-600 dark:text-violet-400 font-semibold text-lg">
+                                <div class="h-12 w-12 rounded-lg bg-primary-100 dark:bg-primary-900/20 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-primary-600 dark:text-primary-400 font-semibold text-lg">
                                         {{ job.company | slice: 0, 1 | upcase }}
                                     </span>
                                 </div>
@@ -87,7 +87,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                     <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-1" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
                                         <span itemprop="name">{{ job.company }}</span>
                                     </p>
-                                    <time class="text-sm font-medium text-violet-600 dark:text-violet-400" 
+                                    <time class="text-sm font-medium text-primary-600 dark:text-primary-400" 
                                           datetime="{{ job.date | date: '%Y' }}" 
                                           itemprop="datePosted">
                                         {{ job.period }}
@@ -115,7 +115,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                             <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-400 mb-4">
                                 {% for point in bullet_points limit: 3 %}
                                 <li class="flex gap-2">
-                                    <span class="text-violet-500 mt-1 flex-shrink-0">•</span>
+                                    <span class="text-secondary-500 mt-1 flex-shrink-0">•</span>
                                     <span>{{ point | truncatewords: 25 }}</span>
                                 </li>
                                 {% endfor %}
@@ -126,9 +126,24 @@ description: 15+ years of full-stack software engineering experience with Fortun
                             {% if job.technologies %}
                             <div class="flex flex-wrap gap-2 mb-4">
                                 {% for tech in job.technologies limit: 8 %}
-                                <span class="inline-flex items-center rounded-md bg-violet-50 dark:bg-violet-900/20 px-2.5 py-1 text-xs font-medium text-violet-700 dark:text-violet-400 ring-1 ring-inset ring-violet-700/10 dark:ring-violet-400/20">
-                                    {{ tech }}
-                                </span>
+                                {% assign tech_lower = tech | downcase %}
+                                {% if tech_lower contains "node" or tech_lower contains "express" or tech_lower contains "nestjs" or tech_lower contains "go" or tech_lower contains "python" or tech_lower contains "php" or tech_lower contains "java" or tech_lower contains "graphql" or tech_lower contains "api" or tech_lower contains "microservice" or tech_lower contains "prisma" or tech_lower contains "backend" or tech_lower contains "salesforce" %}
+                                    <span class="inline-flex items-center rounded-md bg-secondary-50 dark:bg-secondary-900/20 px-2.5 py-1 text-xs font-medium text-secondary-700 dark:text-secondary-400 ring-1 ring-inset ring-secondary-700/10 dark:ring-secondary-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% elsif tech_lower contains "postgres" or tech_lower contains "mongodb" or tech_lower contains "mysql" or tech_lower contains "database" or tech_lower contains "sql" or tech_lower contains "jest" or tech_lower contains "cypress" or tech_lower contains "test" or tech_lower contains "testing" or tech_lower contains "enzyme" %}
+                                    <span class="inline-flex items-center rounded-md bg-accent-50 dark:bg-accent-900/20 px-2.5 py-1 text-xs font-medium text-accent-700 dark:text-accent-400 ring-1 ring-inset ring-accent-700/10 dark:ring-accent-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% elsif tech_lower contains "aws" or tech_lower contains "gcp" or tech_lower contains "azure" or tech_lower contains "kubernetes" or tech_lower contains "docker" or tech_lower contains "terraform" or tech_lower contains "netlify" or tech_lower contains "vercel" or tech_lower contains "infrastructure" or tech_lower contains "devops" or tech_lower contains "cloud" or tech_lower contains "sqs" or tech_lower contains "sns" %}
+                                    <span class="inline-flex items-center rounded-md bg-highlight-50 dark:bg-highlight-900/20 px-2.5 py-1 text-xs font-medium text-highlight-700 dark:text-highlight-400 ring-1 ring-inset ring-highlight-700/10 dark:ring-highlight-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% else %}
+                                    <span class="inline-flex items-center rounded-md bg-primary-50 dark:bg-primary-900/20 px-2.5 py-1 text-xs font-medium text-primary-700 dark:text-primary-400 ring-1 ring-inset ring-primary-700/10 dark:ring-primary-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% endif %}
                                 {% endfor %}
                                 {% if job.technologies.size > 8 %}
                                 <span class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
@@ -139,7 +154,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                             {% endif %}
                             
                             <!-- View Details Link -->
-                            <div class="mt-4 flex items-center text-sm font-medium text-violet-600 dark:text-violet-400">
+                            <div class="mt-4 flex items-center text-sm font-medium text-secondary-600 dark:text-secondary-400">
                                 View full details
                                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                                     <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
