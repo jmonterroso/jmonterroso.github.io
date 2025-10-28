@@ -1,48 +1,178 @@
 ---
 layout: core
-title: Freelance Projects | Jayson Monterroso | Software Developer
+title: Projects | Jayson Monterroso | Software Developer
+description: Freelance projects and client work spanning e-commerce, real estate, fintech, and more. Built with modern web technologies.
 ---
 
+{% assign projects = (site.projects | sort: 'date') | reverse %}
+{% assign unique_techs = '' | split: '' %}
+{% for project in projects %}
+  {% if project.technologies %}
+    {% for tech in project.technologies %}
+      {% unless unique_techs contains tech %}
+        {% assign unique_techs = unique_techs | push: tech %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign industries_count = 5 %}
 
-<div class="mb-8 mt-12 lg:mt-16">
-    <div class="max-w-2xl">
-        <h1 class="text-5xl font-bold tracking-tight mb-4">Unleashing creativity: my journey in software
-            development</h1>
-        <p class="dark:text-zinc-400 leading-7">Explore my journey in software development through some of my most
-            fascinating and innovative projects.</p>
+<!-- Hero Section with Stats -->
+<div class="mb-16 mt-12 lg:mt-16">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <h1 class="text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-6">Things I've Shipped</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
+                <div class="text-4xl font-bold text-accent-600 dark:text-accent-400 mb-2">{{ projects.size }}</div>
+                <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Projects Completed</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-400">Client & freelance work</div>
+            </div>
+            <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
+                <div class="text-4xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">{{ industries_count }}+</div>
+                <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Industries Served</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-400">E-commerce, real estate, fintech</div>
+            </div>
+            <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
+                <div class="text-4xl font-bold text-highlight-600 dark:text-highlight-400 mb-2">{{ unique_techs.size }}+</div>
+                <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Technologies Used</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-400">Modern web stack</div>
+            </div>
+        </div>
+        <div class="flex gap-6 flex-col">
+            <p class="text-zinc-600 dark:text-zinc-400 leading-7">Here's a selection of projects I've worked on over the years. These range from e-commerce platforms and real estate applications to fintech solutions and mobile apps. Each one taught me something new and pushed me to level up my skills.</p>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-7">Most of these were client projects where I worked as a freelancer or contractor, helping companies bring their ideas to life. I've focused on building things that actually work, ship on time, and deliver real value to users.</p>
+        </div>
     </div>
 </div>
 
-<div class="flex max-w-3xl flex-col space-y-16">
-    {% assign projects = (site.projects | sort: 'date') | reverse %}
-    {% for project in projects %}
-
-    <div class="col-lg-12 col-12 d-flex my-3">
-        <div class="col-12">
-            <div class="relative flex h-12 w-12 mb-3.5 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <img class="h-10 w-10 rounded-full" src="{{site.url}}/{{ project.company_logo }}"
-                     alt="{{ project.name }}">
-            </div>
-            <div class="flex gap-3 items-center">
-                <div class="w-full">
-                    <p class="text-base font-medium mb-3 ">
-                        <span class="mb-3 dark:text-zinc-400 text-sm flex gap-3 items-center"> {{project.company}} <span
-                                class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500 block"></span> {{ project.date | date: '%Y' }}   </span>
-                        <span
-                                class="font-weight-bold">{{project.position }}</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="dark:text-zinc-400 text-sm leading-6">
-                {{ project.content }}
-
+<!-- Timeline Projects Section -->
+<section class="mt-16">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <!-- Timeline Container -->
+        <div class="relative">
+            <!-- Vertical Timeline Line -->
+            <div class="absolute left-[10px] top-8 bottom-8 w-0.5 bg-zinc-200 dark:bg-zinc-700"></div>
+            
+            <div class="space-y-8">
+                {% for project in projects %}
+                {% assign is_first = forloop.index0 | plus: 0 | at_most: 0 %}
+                <article class="relative pl-12">
+                    <!-- Timeline Dot -->
+                    <div class="absolute left-0 top-6 h-5 w-5 rounded-full bg-zinc-300 dark:bg-zinc-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center" aria-label="Project timeline point">
+                        <div class="h-1.5 w-1.5 rounded-full bg-white"></div>
+                    </div>
+                    
+                    <a href="{{ project.url }}" class="block">
+                        <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 {% if is_first == 0 %}bg-gradient-to-br from-white to-primary-50/30 dark:from-zinc-800/50 dark:to-primary-900/10{% else %}bg-white dark:bg-zinc-800/50{% endif %} hover:border-primary-200 dark:hover:border-primary-800 hover:shadow-lg hover:scale-[1.01] transition-all cursor-pointer">
+                            <!-- Logo and Header -->
+                            <div class="flex items-start gap-4 mb-4">
+                                {% if project.company_logo %}
+                                <img src="{{ site.url }}/{{ project.company_logo }}" 
+                                     alt="{{ project.company }}" 
+                                     class="h-12 w-12 rounded-lg object-contain bg-white p-1 flex-shrink-0">
+                                {% else %}
+                                <div class="h-12 w-12 rounded-lg bg-primary-100 dark:bg-primary-900/20 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-primary-600 dark:text-primary-400 font-semibold text-lg">
+                                        {{ project.company | slice: 0, 1 | upcase }}
+                                    </span>
+                                </div>
+                                {% endif %}
+                                <div class="flex-1">
+                                    <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
+                                        {{ project.position }}
+                                    </h2>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+                                        {{ project.company }}
+                                    </p>
+                                    <time class="text-sm font-medium text-primary-600 dark:text-primary-400" 
+                                          datetime="{{ project.date | date: '%Y' }}">
+                                        {{ project.date | date: '%Y' }}
+                                    </time>
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description Excerpt -->
+                            {% assign content_clean = project.content | strip_html %}
+                            {% assign excerpt = content_clean | truncatewords: 30 %}
+                            {% if excerpt %}
+                            <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-6">
+                                {{ excerpt }}
+                            </p>
+                            {% endif %}
+                            
+                            <!-- Technology Badges -->
+                            {% if project.technologies %}
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                {% for tech in project.technologies limit: 8 %}
+                                {% assign tech_lower = tech | downcase %}
+                                {% if tech_lower contains "node" or tech_lower contains "express" or tech_lower contains "nestjs" or tech_lower contains "go" or tech_lower contains "python" or tech_lower contains "php" or tech_lower contains "java" or tech_lower contains "graphql" or tech_lower contains "api" or tech_lower contains "microservice" or tech_lower contains "prisma" or tech_lower contains "backend" or tech_lower contains "salesforce" %}
+                                    <span class="inline-flex items-center rounded-md bg-secondary-50 dark:bg-secondary-900/20 px-2.5 py-1 text-xs font-medium text-secondary-700 dark:text-secondary-400 ring-1 ring-inset ring-secondary-700/10 dark:ring-secondary-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% elsif tech_lower contains "postgres" or tech_lower contains "mongodb" or tech_lower contains "mysql" or tech_lower contains "database" or tech_lower contains "sql" or tech_lower contains "jest" or tech_lower contains "cypress" or tech_lower contains "test" or tech_lower contains "testing" or tech_lower contains "enzyme" %}
+                                    <span class="inline-flex items-center rounded-md bg-accent-50 dark:bg-accent-900/20 px-2.5 py-1 text-xs font-medium text-accent-700 dark:text-accent-400 ring-1 ring-inset ring-accent-700/10 dark:ring-accent-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% elsif tech_lower contains "aws" or tech_lower contains "gcp" or tech_lower contains "azure" or tech_lower contains "kubernetes" or tech_lower contains "docker" or tech_lower contains "terraform" or tech_lower contains "netlify" or tech_lower contains "vercel" or tech_lower contains "infrastructure" or tech_lower contains "devops" or tech_lower contains "cloud" or tech_lower contains "sqs" or tech_lower contains "sns" %}
+                                    <span class="inline-flex items-center rounded-md bg-highlight-50 dark:bg-highlight-900/20 px-2.5 py-1 text-xs font-medium text-highlight-700 dark:text-highlight-400 ring-1 ring-inset ring-highlight-700/10 dark:ring-highlight-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% else %}
+                                    <span class="inline-flex items-center rounded-md bg-primary-50 dark:bg-primary-900/20 px-2.5 py-1 text-xs font-medium text-primary-700 dark:text-primary-400 ring-1 ring-inset ring-primary-700/10 dark:ring-primary-400/20">
+                                        {{ tech }}
+                                    </span>
+                                {% endif %}
+                                {% endfor %}
+                                {% if project.technologies.size > 8 %}
+                                <span class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                                    +{{ project.technologies.size | minus: 8 }} more
+                                </span>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                            
+                            <!-- View Project Link -->
+                            <div class="flex items-center gap-2 text-sm font-medium text-primary-600 dark:text-primary-400">
+                                <span>View project</span>
+                                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="h-4 w-4">
+                                    <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                {% endfor %}
             </div>
         </div>
     </div>
+</section>
 
-
-    {% endfor %}
-</div>
-
-
+<!-- Bottom CTA Section -->
+<section class="mt-24 mb-16">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <div class="rounded-2xl border border-zinc-100 dark:border-zinc-700/40 bg-gradient-to-br from-white to-primary-50/30 dark:from-zinc-800/50 dark:to-primary-900/10 p-8 sm:p-12">
+            <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Let's Build Together</h2>
+            <p class="text-zinc-600 dark:text-zinc-400 mb-8 leading-7">
+                Have a project in mind? I'm always interested in working on something new. Whether it's a web app, mobile app, or something else entirely, let's talk about how we can bring your idea to life.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="/pdf/jayson-monterroso-resume.pdf" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 rounded-md border border-primary-500 dark:border-primary-400 bg-transparent px-6 py-3 text-sm font-medium text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    View Resume
+                </a>
+                <!-- <a href="mailto:contact@jaysonmonterroso.com" 
+                   class="inline-flex items-center gap-2 rounded-md border border-zinc-300 dark:border-zinc-600 bg-transparent px-6 py-3 text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
+                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Start a Project
+                </a> -->
+            </div>
+        </div>
+    </div>
+</section>

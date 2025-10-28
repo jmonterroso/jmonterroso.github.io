@@ -44,9 +44,24 @@ cls: post
             <div class="mt-6">
                 <div class="flex flex-wrap gap-3">
                     {% for tech in page.technologies %}
-                    <span class="inline-flex items-center rounded-lg bg-primary-50 dark:bg-primary-400/10 px-4 py-2 text-sm font-medium text-primary-700 dark:text-primary-400 ring-1 ring-inset ring-primary-700/10 dark:ring-primary-400/20">
-                        {{ tech }}
-                    </span>
+                    {% assign tech_lower = tech | downcase %}
+                    {% if tech_lower contains "node" or tech_lower contains "express" or tech_lower contains "nestjs" or tech_lower contains "go" or tech_lower contains "python" or tech_lower contains "php" or tech_lower contains "java" or tech_lower contains "graphql" or tech_lower contains "api" or tech_lower contains "microservice" or tech_lower contains "prisma" or tech_lower contains "backend" or tech_lower contains "salesforce" %}
+                        <span class="inline-flex items-center rounded-lg bg-secondary-50 dark:bg-secondary-400/10 px-4 py-2 text-sm font-medium text-secondary-700 dark:text-secondary-400 ring-1 ring-inset ring-secondary-700/10 dark:ring-secondary-400/20">
+                            {{ tech }}
+                        </span>
+                    {% elsif tech_lower contains "postgres" or tech_lower contains "mongodb" or tech_lower contains "mysql" or tech_lower contains "database" or tech_lower contains "sql" or tech_lower contains "jest" or tech_lower contains "cypress" or tech_lower contains "test" or tech_lower contains "testing" or tech_lower contains "enzyme" %}
+                        <span class="inline-flex items-center rounded-lg bg-accent-50 dark:bg-accent-400/10 px-4 py-2 text-sm font-medium text-accent-700 dark:text-accent-400 ring-1 ring-inset ring-accent-700/10 dark:ring-accent-400/20">
+                            {{ tech }}
+                        </span>
+                    {% elsif tech_lower contains "aws" or tech_lower contains "gcp" or tech_lower contains "azure" or tech_lower contains "kubernetes" or tech_lower contains "docker" or tech_lower contains "terraform" or tech_lower contains "netlify" or tech_lower contains "vercel" or tech_lower contains "infrastructure" or tech_lower contains "devops" or tech_lower contains "cloud" or tech_lower contains "sqs" or tech_lower contains "sns" %}
+                        <span class="inline-flex items-center rounded-lg bg-highlight-50 dark:bg-highlight-400/10 px-4 py-2 text-sm font-medium text-highlight-700 dark:text-highlight-400 ring-1 ring-inset ring-highlight-700/10 dark:ring-highlight-400/20">
+                            {{ tech }}
+                        </span>
+                    {% else %}
+                        <span class="inline-flex items-center rounded-lg bg-primary-50 dark:bg-primary-400/10 px-4 py-2 text-sm font-medium text-primary-700 dark:text-primary-400 ring-1 ring-inset ring-primary-700/10 dark:ring-primary-400/20">
+                            {{ tech }}
+                        </span>
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
