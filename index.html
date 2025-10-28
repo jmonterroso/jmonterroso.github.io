@@ -56,20 +56,20 @@ active: home
                 <span class="ml-3">Work</span></h2>
             {% assign jobs = (site.experience | sort: 'date') | reverse %}
             {% for job in jobs %}
-            <div class="flex gap-2 items-center">
-                <div class="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <a href="{{ job.url }}" class="flex gap-2 items-center group transition-all duration-200 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 rounded-lg p-2 -m-2">
+                <div class="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 group-hover:shadow-lg transition-shadow">
                     <img class="h-8 w-8 rounded-full object-contain bg-white " src="{{site.url}}/{{ job.company_logo }}"
-                         alt="{{ project.name }}">
+                         alt="{{ job.company }}">
 
                 </div>
                 <div class="w-full">
-                    <h4 class=" text-sm font-bold">{{job.company}}</h4>
+                    <h4 class="text-sm font-bold group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">{{job.company}}</h4>
                     <div class="flex items-center justify-between text-xs">
-                        <div class=" dark:text-zinc-400">{{job.position }}</div>
-                        <div class=" dark:text-zinc-400">{{job.period}}</div>
+                        <div class="dark:text-zinc-400">{{job.position }}</div>
+                        <div class="dark:text-zinc-400">{{job.period}}</div>
                     </div>
                 </div>
-            </div>
+            </a>
 
 
             {% endfor %}
