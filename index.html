@@ -545,8 +545,7 @@ active: home
             </a>
         </div>
         <div class="grid md:grid-cols-2 gap-6">
-            {% assign posts = site.posts | limit: 2 %}
-            {% for post in posts %}
+            {% for post in site.posts limit: 2 %}
             <a href="{{ post.url }}" class="block rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 hover:border-violet-200 dark:hover:border-violet-800 hover:shadow-lg transition-all">
                 <time class="text-sm text-zinc-600 dark:text-zinc-400">{{ post.date | date: "%B %d, %Y" }}</time>
                 <h3 class="mt-2 font-semibold text-zinc-900 dark:text-zinc-100">{{ post.title }}</h3>
