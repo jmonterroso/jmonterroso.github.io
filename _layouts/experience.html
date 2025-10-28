@@ -1,55 +1,182 @@
 ---
 layout: core
 title: Experience | Jayson Monterroso | Software Developer
-description: Here on this page I describe every job I ever had excluding freelance jobs, but full time jobs
+description: 15+ years of full-stack software engineering experience with Fortune 500 companies and startups. Specialized in React, TypeScript, Node.js, and cloud architecture.
 
 ---
-<div class="mb-8 mt-16 lg:mt-32">
-    <div class="max-w-2xl">
-        <h1 class="text-5xl font-bold tracking-tight mb-4">Experience</h1>
+{% assign jobs = (site.experience | sort: 'date') | reverse %}
+{% assign total_years = 15 %}
+{% assign tech_count = 0 %}
+{% for job in jobs %}
+  {% if job.technologies %}
+    {% assign tech_count = tech_count | plus: job.technologies.size %}
+  {% endif %}
+{% endfor %}
+
+<!-- Hero Section with Stats -->
+<div class="mb-16 mt-16 lg:mt-32">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <h1 class="text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-6">Experience</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
+                <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">{{ total_years }}+</div>
+                <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Years Experience</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-400">Full-stack development</div>
+            </div>
+            <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
+                <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">{{ jobs.size }}</div>
+                <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Companies</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-400">Fortune 500 & startups</div>
+            </div>
+            <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
+                <div class="text-4xl font-bold text-violet-600 dark:text-violet-400 mb-2">30+</div>
+                <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Technologies</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-400">Modern tech stack</div>
+            </div>
+        </div>
         <div class="flex gap-6 flex-col">
-            <p class="dark:text-zinc-400 leading-7">I've worked for more than 15+ years helping companies and startups to build their products and services. I've worked with 500 Fortune companies and startups. I've worked with US, Canada, Europe, and LATAM companies. I've worked with companies from different industries like SaSS, security, Fintech, e-commerce, real estate, etc.</p>
-            <p class="dark:text-zinc-400 leading-7">I'm committed to adding value to the company I work for, by helping them to create, document, and ensure good practices, keeping the code maintainable, and reducing friction in the development team by improving processes and choosing the right dev tools, this will end up improving the efficiency, quality, agility and speed of delivering new features and products to the market.</p>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-7">I've worked for more than 15+ years helping companies and startups to build their products and services. I've worked with Fortune 500 companies and startups. I've worked with US, Canada, Europe, and LATAM companies. I've worked with companies from different industries like SaaS, security, Fintech, e-commerce, real estate, etc.</p>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-7">I'm committed to adding value to the company I work for, by helping them to create, document, and ensure good practices, keeping the code maintainable, and reducing friction in the development team by improving processes and choosing the right dev tools, this will end up improving the efficiency, quality, agility and speed of delivering new features and products to the market.</p>
         </div>
     </div>
 </div>
 
-<div class="mt-16 sm:mt-20">
-    <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-        <div class="flex max-w-3xl flex-col space-y-16">
-            {% assign jobs = (site.experience | sort: 'date') | reverse %}
-            {% for job in jobs %}
-            <article class="md:grid md:grid-cols-4 md:items-baseline">
-                <div class="md:col-span-3 group relative flex flex-col items-start">
-                    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                        <a href="{{ job.url }}"><span
-                                class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
-                                class="relative z-10">{{ job.title }}</span></a>
-                    </h2>
-                    <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
-                          datetime="2022-09-05"><span class="absolute inset-y-0 left-0 flex items-center"
-                                                      aria-hidden="true"><span
-                            class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span> {{ job.period}}
-                    </time>
-                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                        {{ job.content | strip_html | truncatewords: 50}}
-                    </p>
-                    <div aria-hidden="true"
-                         class="relative z-10 mt-4 flex items-center text-sm font-medium text-violet-500">Read more
-                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                            <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
-                                  stroke-linejoin="round"></path>
-                        </svg>
+<!-- Timeline Experience Section -->
+<section class="mt-16">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <!-- Timeline Container -->
+        <div class="relative">
+            <!-- Vertical Timeline Line -->
+            <div class="absolute left-[15px] top-8 bottom-8 w-0.5 bg-zinc-200 dark:bg-zinc-700"></div>
+            
+            <div class="space-y-8">
+                {% for job in jobs %}
+                {% assign is_current = forloop.index0 | plus: 0 | at_most: 2 %}
+                <article class="relative pl-12" itemscope itemtype="https://schema.org/JobPosting">
+                    <!-- Timeline Dot -->
+                    {% if is_current == 0 %}
+                    <div class="absolute left-0 top-6 h-8 w-8 rounded-full bg-violet-500 dark:bg-violet-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center">
+                        <div class="h-3 w-3 rounded-full bg-white"></div>
                     </div>
-                </div>
-                <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500"
-                      datetime="{{job.date}}">{{ job.period }}
-                </time>
-            </article>
-
-            {% endfor %}
+                    {% else %}
+                    <div class="absolute left-0 top-6 h-8 w-8 rounded-full bg-zinc-300 dark:bg-zinc-600 ring-4 ring-white dark:ring-zinc-900 flex items-center justify-center">
+                        <div class="h-3 w-3 rounded-full bg-white"></div>
+                    </div>
+                    {% endif %}
+                    
+                    <a href="{{ job.url }}" class="block">
+                        <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50 hover:border-violet-200 dark:hover:border-violet-800 hover:shadow-lg transition-all cursor-pointer">
+                            <!-- Logo and Header -->
+                            <div class="flex items-start gap-4 mb-4">
+                                {% if job.company_logo %}
+                                <img src="{{ site.url }}/{{ job.company_logo }}" 
+                                     alt="{{ job.company }}" 
+                                     class="h-12 w-12 rounded-lg object-contain bg-white p-1 flex-shrink-0"
+                                     itemprop="image">
+                                {% else %}
+                                <div class="h-12 w-12 rounded-lg bg-violet-100 dark:bg-violet-900/20 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-violet-600 dark:text-violet-400 font-semibold text-lg">
+                                        {{ job.company | slice: 0, 1 | upcase }}
+                                    </span>
+                                </div>
+                                {% endif %}
+                                <div class="flex-1">
+                                    <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-1" itemprop="title">
+                                        {{ job.position }}
+                                    </h2>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-1" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+                                        <span itemprop="name">{{ job.company }}</span>
+                                    </p>
+                                    <time class="text-sm font-medium text-violet-600 dark:text-violet-400" 
+                                          datetime="{{ job.date | date: '%Y' }}" 
+                                          itemprop="datePosted">
+                                        {{ job.period }}
+                                    </time>
+                                </div>
+                            </div>
+                            
+                            <!-- Key Achievements -->
+                            {% assign content_clean = job.content | strip_html %}
+                            {% assign content_lines = content_clean | newline_to_br | split: '<br />' %}
+                            {% assign bullet_points = '' | split: '' %}
+                            {% for line in content_lines %}
+                                {% assign line_stripped = line | strip %}
+                                {% if line_stripped != blank and line_stripped contains '-' %}
+                                    {% assign line_clean = line_stripped | replace: '- ', '' | strip %}
+                                    {% if line_clean != blank %}
+                                        {% assign bullet_points = bullet_points | push: line_clean %}
+                                    {% endif %}
+                                {% endif %}
+                                {% if bullet_points.size >= 3 %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if bullet_points.size > 0 %}
+                            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+                                {% for point in bullet_points limit: 3 %}
+                                <li class="flex gap-2">
+                                    <span class="text-violet-500 mt-1 flex-shrink-0">•</span>
+                                    <span>{{ point | truncatewords: 25 }}</span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            
+                            <!-- Technology Badges -->
+                            {% if job.technologies %}
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                {% for tech in job.technologies limit: 8 %}
+                                <span class="inline-flex items-center rounded-md bg-violet-50 dark:bg-violet-900/20 px-2.5 py-1 text-xs font-medium text-violet-700 dark:text-violet-400 ring-1 ring-inset ring-violet-700/10 dark:ring-violet-400/20">
+                                    {{ tech }}
+                                </span>
+                                {% endfor %}
+                                {% if job.technologies.size > 8 %}
+                                <span class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                                    +{{ job.technologies.size | minus: 8 }} more
+                                </span>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                            
+                            <!-- View Details Link -->
+                            <div class="mt-4 flex items-center text-sm font-medium text-violet-600 dark:text-violet-400">
+                                View full details
+                                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                                    <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Structured Data for SEO -->
+                    <script type="application/ld+json">
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "JobPosting",
+                        "title": "{{ job.position }}",
+                        "description": "{{ job.content | strip_html | truncatewords: 50 | escape }}",
+                        "identifier": {
+                            "@type": "PropertyValue",
+                            "name": "{{ job.company }}",
+                            "value": "{{ job.date }}"
+                        },
+                        "datePosted": "{{ job.date }}",
+                        "employmentType": "FULL_TIME",
+                        "hiringOrganization": {
+                            "@type": "Organization",
+                            "name": "{{ job.company }}"
+                        },
+                        "jobLocation": {
+                            "@type": "Place",
+                            "address": {
+                                "@type": "PostalAddress"
+                            }
+                        }
+                    }
+                    </script>
+                </article>
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
-
+</section>
