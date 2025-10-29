@@ -2,6 +2,7 @@
 layout: core
 ---
 
+
 <div class="mb-16 mt-12 lg:mt-16">
     <div class="mx-auto max-w-2xl lg:max-w-5xl">
         <h1 class="text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">{{ page.headline }}</h1>
@@ -59,12 +60,11 @@ layout: core
     background-color: rgba(139, 92, 246, 0.1);
 }
 
-.uses-content h3 .tool-icon i {
-    font-size: 1.25rem;
+.uses-content h3 .tool-icon svg {
     color: rgb(124 58 237);
 }
 
-.dark .uses-content h3 .tool-icon i {
+.dark .uses-content h3 .tool-icon svg {
     color: rgb(196 181 253);
 }
 
@@ -80,46 +80,42 @@ layout: core
 }
 </style>
 
-<script>
+<script defer>
 document.addEventListener('DOMContentLoaded', function() {
     const iconMap = {
-        'MacBook': 'fab fa-apple',
-        'Monitor': 'fas fa-desktop',
-        'Keyboard': 'fas fa-keyboard',
-        'Mouse': 'fas fa-mouse-pointer',
-        'Herman Miller': 'fas fa-couch',
-        'Chair': 'fas fa-couch',
-        'Cursor': 'fas fa-code',
-        'Warp': 'fas fa-terminal',
-        'Figma': 'fas fa-palette',
-        'DBeaver': 'fas fa-database',
-        'Raycast': 'fas fa-rocket',
-        'Monosnap': 'fas fa-camera',
-        'Rectangle': 'fas fa-window-maximize',
-        'Alfred': 'fas fa-bolt'
+        'MacBook': '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>',
+        'Monitor': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>',
+        'Keyboard': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>',
+        'Mouse': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>',
+        'Herman Miller': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>',
+        'Chair': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>',
+        'Cursor': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>',
+        'Warp': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
+        'Figma': '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM15.852 8.981c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.491 4.49-4.491V0H8.148C5.672 0 3.658 2.014 3.658 4.49s2.014 4.491 4.49 4.491h4.588V8.981zm-.196 7.51h-4.588v4.588c0 2.476 2.014 4.49 4.49 4.49s4.49-2.014 4.49-4.49-.002-4.588-4.392-4.588zM12.735 24c0-1.665 1.355-3.019 3.019-3.019s3.019 1.355 3.019 3.019-1.355 3.019-3.019 3.019-3.019-1.355-3.019-3.019z"/></svg>',
+        'DBeaver': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>',
+        'Raycast': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
+        'Monosnap': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+        'Rectangle': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>',
+        'Alfred': '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>'
     };
     
     const h3s = document.querySelectorAll('.uses-content h3');
     h3s.forEach(h3 => {
         const text = h3.textContent.trim();
-        let iconClass = 'fas fa-circle';
+        let iconSVG = '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>';
         
-        // Match tool names to icons
-        for (const [key, icon] of Object.entries(iconMap)) {
-            if (text.includes(key)) {
-                iconClass = icon;
+        // Match tool names to icons (case-insensitive)
+        for (const [key, svg] of Object.entries(iconMap)) {
+            if (text.toLowerCase().includes(key.toLowerCase())) {
+                iconSVG = svg;
                 break;
             }
         }
         
-        // Create icon element
-        const iconEl = document.createElement('i');
-        iconEl.className = iconClass;
-        
         // Create icon container
         const iconContainer = document.createElement('div');
         iconContainer.className = 'tool-icon';
-        iconContainer.appendChild(iconEl);
+        iconContainer.innerHTML = iconSVG;
         
         // Insert icon before text
         h3.insertBefore(iconContainer, h3.firstChild);

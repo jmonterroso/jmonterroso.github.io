@@ -14,7 +14,8 @@
     "watch:jekyll": "bundle exec jekyll server --livereload --config _config.yml,_config-dev.yml",
     "dev": "concurrently \"npm run watch:jekyll\" \"npm run watch:tailwind\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:tailwind": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
+    "watch:tailwind": "tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
+    "build:tailwind": "tailwindcss -i ./src/styles.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",

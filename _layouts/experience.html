@@ -113,9 +113,9 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                 {% endif %}
                             {% endfor %}
                             {% if bullet_points.size > 0 %}
-                            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-4">
+                            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-4" role="list">
                                 {% for point in bullet_points limit: 3 %}
-                                <li class="flex gap-2">
+                                <li class="flex gap-2" role="listitem">
                                     <span class="text-secondary-500 mt-1 flex-shrink-0">•</span>
                                     <span>{{ point | truncatewords: 25 }}</span>
                                 </li>
