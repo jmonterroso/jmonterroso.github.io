@@ -21,22 +21,22 @@ description: 15+ years of full-stack software engineering experience with Fortun
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
                 <div class="text-4xl font-bold text-accent-600 dark:text-accent-400 mb-2">{{ total_years }}+</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Years Experience</div>
-                <div class="text-xs text-zinc-600 dark:text-zinc-400">Full-stack development</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-300">Full-stack development</div>
             </div>
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
                 <div class="text-4xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">{{ jobs.size }}</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Companies</div>
-                <div class="text-xs text-zinc-600 dark:text-zinc-400">Fortune 500 & startups</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-300">Fortune 500 & startups</div>
             </div>
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
                 <div class="text-4xl font-bold text-accent-600 dark:text-accent-400 mb-2">30+</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Technologies</div>
-                <div class="text-xs text-zinc-600 dark:text-zinc-400">Modern tech stack</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-300">Modern tech stack</div>
             </div>
         </div>
         <div class="flex gap-6 flex-col">
-            <p class="text-zinc-600 dark:text-zinc-400 leading-7">I've worked for more than 15+ years helping companies and startups to build their products and services. I've worked with Fortune 500 companies and startups. I've worked with US, Canada, Europe, and LATAM companies. I've worked with companies from different industries like SaaS, security, Fintech, e-commerce, real estate, etc.</p>
-            <p class="text-zinc-600 dark:text-zinc-400 leading-7">I'm committed to adding value to the company I work for, by helping them to create, document, and ensure good practices, keeping the code maintainable, and reducing friction in the development team by improving processes and choosing the right dev tools, this will end up improving the efficiency, quality, agility and speed of delivering new features and products to the market.</p>
+            <p class="text-zinc-600 dark:text-zinc-300 leading-7">I've worked for more than 15+ years helping companies and startups to build their products and services. I've worked with Fortune 500 companies and startups. I've worked with US, Canada, Europe, and LATAM companies. I've worked with companies from different industries like SaaS, security, Fintech, e-commerce, real estate, etc.</p>
+            <p class="text-zinc-600 dark:text-zinc-300 leading-7">I'm committed to adding value to the company I work for, by helping them to create, document, and ensure good practices, keeping the code maintainable, and reducing friction in the development team by improving processes and choosing the right dev tools, this will end up improving the efficiency, quality, agility and speed of delivering new features and products to the market.</p>
         </div>
     </div>
 </div>
@@ -72,6 +72,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                 <img src="{{ site.url }}/{{ job.company_logo }}" 
                                      alt="{{ job.company }}" 
                                      class="h-12 w-12 rounded-lg object-contain bg-white p-1 flex-shrink-0"
+                                     width="48" height="48" loading="lazy"
                                      itemprop="image">
                                 {% else %}
                                 <div class="h-12 w-12 rounded-lg bg-primary-100 dark:bg-primary-900/20 flex items-center justify-center flex-shrink-0">
@@ -84,7 +85,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                     <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-1" itemprop="title">
                                         {{ job.position }}
                                     </h2>
-                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-1" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-300 mb-1" itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
                                         <span itemprop="name">{{ job.company }}</span>
                                     </p>
                                     <time class="text-sm font-medium text-primary-600 dark:text-primary-400" 
@@ -112,7 +113,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                 {% endif %}
                             {% endfor %}
                             {% if bullet_points.size > 0 %}
-                            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+                            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-4">
                                 {% for point in bullet_points limit: 3 %}
                                 <li class="flex gap-2">
                                     <span class="text-secondary-500 mt-1 flex-shrink-0">•</span>
@@ -146,7 +147,7 @@ description: 15+ years of full-stack software engineering experience with Fortun
                                 {% endif %}
                                 {% endfor %}
                                 {% if job.technologies.size > 8 %}
-                                <span class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                                <span class="inline-flex items-center rounded-md bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-300">
                                     +{{ job.technologies.size | minus: 8 }} more
                                 </span>
                                 {% endif %}

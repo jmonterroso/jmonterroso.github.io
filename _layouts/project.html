@@ -21,7 +21,7 @@ cls: post
         <div class="mx-auto max-w-2xl">
             <!-- Period/Date -->
             {% if page.period %}
-            <time datetime="{{ page.date }}" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+            <time datetime="{{ page.date }}" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-300">
                 <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                 <span class="ml-3">{{ page.period }}</span>
             </time>
@@ -33,7 +33,7 @@ cls: post
                     {{ page.title }}
                 </h1>
                 {% if page.company %}
-                <h2 class="text-xl font-semibold tracking-tight text-zinc-600 dark:text-zinc-400 sm:text-xl">
+                <h2 class="text-xl font-semibold tracking-tight text-zinc-600 dark:text-zinc-300 sm:text-xl">
                     {{ page.company }}
                 </h2>
                 {% endif %}
@@ -97,7 +97,7 @@ cls: post
             {% endif %}
 
             <!-- Main Content -->
-            <div class="mt-8 prose dark:prose-invert leading-7 dark:text-zinc-400 max-w-none">{{ content }}</div>
+            <div class="mt-8 prose dark:prose-invert leading-7 dark:text-zinc-300 max-w-none">{{ content }}</div>
 
             <!-- CTA to View More Projects -->
             <div class="mt-12 pt-8 border-t border-zinc-100 dark:border-zinc-700/40">

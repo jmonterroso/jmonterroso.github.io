@@ -25,22 +25,22 @@ description: Freelance projects and client work spanning e-commerce, real estate
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
                 <div class="text-4xl font-bold text-accent-600 dark:text-accent-400 mb-2">{{ projects.size }}</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Projects Completed</div>
-                <div class="text-xs text-zinc-600 dark:text-zinc-400">Client & freelance work</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-300">Client & freelance work</div>
             </div>
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
                 <div class="text-4xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">{{ industries_count }}+</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Industries Served</div>
-                <div class="text-xs text-zinc-600 dark:text-zinc-400">E-commerce, real estate, fintech</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-300">E-commerce, real estate, fintech</div>
             </div>
             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 bg-white dark:bg-zinc-800/50">
                 <div class="text-4xl font-bold text-highlight-600 dark:text-highlight-400 mb-2">{{ unique_techs.size }}+</div>
                 <div class="text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-1">Technologies Used</div>
-                <div class="text-xs text-zinc-600 dark:text-zinc-400">Modern web stack</div>
+                <div class="text-xs text-zinc-600 dark:text-zinc-300">Modern web stack</div>
             </div>
         </div>
         <div class="flex gap-6 flex-col">
-            <p class="text-zinc-600 dark:text-zinc-400 leading-7">Here's a selection of projects I've worked on over the years. These range from e-commerce platforms and real estate applications to fintech solutions and mobile apps. Each one taught me something new and pushed me to level up my skills.</p>
-            <p class="text-zinc-600 dark:text-zinc-400 leading-7">Most of these were client projects where I worked as a freelancer or contractor, helping companies bring their ideas to life. I've focused on building things that actually work, ship on time, and deliver real value to users.</p>
+            <p class="text-zinc-600 dark:text-zinc-300 leading-7">Here's a selection of projects I've worked on over the years. These range from e-commerce platforms and real estate applications to fintech solutions and mobile apps. Each one taught me something new and pushed me to level up my skills.</p>
+            <p class="text-zinc-600 dark:text-zinc-300 leading-7">Most of these were client projects where I worked as a freelancer or contractor, helping companies bring their ideas to life. I've focused on building things that actually work, ship on time, and deliver real value to users.</p>
         </div>
     </div>
 </div>
@@ -69,7 +69,8 @@ description: Freelance projects and client work spanning e-commerce, real estate
                                 {% if project.company_logo %}
                                 <img src="{{ site.url }}/{{ project.company_logo }}" 
                                      alt="{{ project.company }}" 
-                                     class="h-12 w-12 rounded-lg object-contain bg-white p-1 flex-shrink-0">
+                                     class="h-12 w-12 rounded-lg object-contain bg-white p-1 flex-shrink-0"
+                                     width="48" height="48" loading="lazy">
                                 {% else %}
                                 <div class="h-12 w-12 rounded-lg bg-primary-100 dark:bg-primary-900/20 flex items-center justify-center flex-shrink-0">
                                     <span class="text-primary-600 dark:text-primary-400 font-semibold text-lg">
@@ -81,7 +82,7 @@ description: Freelance projects and client work spanning e-commerce, real estate
                                     <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
                                         {{ project.position }}
                                     </h2>
-                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-300 mb-1">
                                         {{ project.company }}
                                     </p>
                                     <time class="text-sm font-medium text-primary-600 dark:text-primary-400" 
@@ -95,7 +96,7 @@ description: Freelance projects and client work spanning e-commerce, real estate
                             {% assign content_clean = project.content | strip_html %}
                             {% assign excerpt = content_clean | truncatewords: 30 %}
                             {% if excerpt %}
-                            <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-6">
+                            <p class="text-sm text-zinc-600 dark:text-zinc-300 mb-4 leading-6">
                                 {{ excerpt }}
                             </p>
                             {% endif %}
@@ -152,7 +153,7 @@ description: Freelance projects and client work spanning e-commerce, real estate
     <div class="mx-auto max-w-2xl lg:max-w-5xl">
         <div class="rounded-2xl border border-zinc-100 dark:border-zinc-700/40 bg-gradient-to-br from-white to-primary-50/30 dark:from-zinc-800/50 dark:to-primary-900/10 p-8 sm:p-12">
             <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Let's Build Together</h2>
-            <p class="text-zinc-600 dark:text-zinc-400 mb-8 leading-7">
+            <p class="text-zinc-600 dark:text-zinc-300 mb-8 leading-7">
                 Have a project in mind? I'm always interested in working on something new. Whether it's a web app, mobile app, or something else entirely, let's talk about how we can bring your idea to life.
             </p>
             <div class="flex flex-wrap gap-4">
