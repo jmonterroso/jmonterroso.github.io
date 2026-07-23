@@ -79,10 +79,12 @@ Experienced Software Engineer with a solid track record of delivering successful
 
 EXPERIENCE
 SENIOR SOFTWARE ENGINEER
-Intevity | Under Armour | 2025 
-•	Replaced Mulesoft APIs (events, orders, points, profiles, rewards, Snowflake, Aptos) with scalable Node.js microservices, reducing third-party licensing expenses and enabling complete in-house API ownership for faster iteration and maintainability.
-•	Developed a scalable event-driven architecture using SQS queues on AWS(SQS, SNS), consumers, and domain controllers, enhancing the throughput and reliability of loyalty microservices.
+Intevity | Under Armour | 2025 - Present
+•	Replaced MuleSoft APIs (events, orders, points, profiles, rewards, Snowflake, Aptos) with scalable Node.js microservices, reducing third-party licensing expenses and enabling complete in-house API ownership for faster iteration and maintainability.
+•	Developed a scalable event-driven architecture using AWS SQS/SNS, consumers, and domain controllers, enhancing the throughput and reliability of loyalty microservices.
 •	Integrated microservices with core enterprise systems including PredictSpring POS, Aptos POS, UA.com, OMS, SFSC, and SFCC.
+•	On a separate commerce team, delivered Share & Transfer Cart end to end across the Next.js/React storefront and GraphQL APIs, including multi-region shared-cart and email flows.
+•	Built and hardened commerce experiences including shoppable social content, checkout, returns, search tracking, and fulfillment notifications with comprehensive automated tests.
 
 SOFTWARE ENGINEER III
 Notch Financial | 2022 - 2025
@@ -123,4 +125,3 @@ Accenture | 2011 - 2013
 •	Built a hybrid iOS/Android apps for Merck Pharma.
 •	Backend architecture and functionality in PHP/WordPress for costaricavacations.com, including custom plugins for Razuna CDN.
 •	 Created a SPA with Backbone.js for Gatorade to display sports scores and statistics via RESTful.
-
