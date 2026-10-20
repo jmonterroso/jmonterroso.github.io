@@ -45,6 +45,9 @@ AWS, GCP, Netlify
 MOBILE
 React Native, Ionic (Capacitor), NativeScript
 
+AI-ASSISTED DEVELOPMENT
+GitHub Copilot, spec-driven development, AI-driven root cause analysis
+
 
 EDUCATION
 Bachelor of Computer Systems
@@ -78,21 +81,23 @@ Soccer		PROFILE
 Experienced Software Engineer with a solid track record of delivering successful projects for global clients across various industries, including expertise with startups in their early stages. I have deep expertise in the full development life cycle, agile practices, and team leadership. I'm skilled in full-stack development, JavaScript, mobile, CI/ CD, and best coding practices. With over 18+ years of experience in web development, I'm committed to continuous learning and self-improvement and passionate about using my skills to deliver high-quality solutions.
 
 EXPERIENCE
-SENIOR SOFTWARE ENGINEER
+SENIOR FULLSTACK ENGINEER
 Intevity | Under Armour | 2025 - Present
-•	Replaced MuleSoft APIs (events, orders, points, profiles, rewards, Snowflake, Aptos) with scalable Node.js microservices, reducing third-party licensing expenses and enabling complete in-house API ownership for faster iteration and maintainability.
-•	Developed a scalable event-driven architecture using AWS SQS/SNS, consumers, and domain controllers, enhancing the throughput and reliability of loyalty microservices.
-•	Integrated microservices with core enterprise systems including PredictSpring POS, Aptos POS, UA.com, OMS, SFSC, and SFCC.
+•	Replaced MuleSoft APIs with scalable Node.js microservices, reducing licensing costs and bringing loyalty integrations in-house.
+•	Built event-driven AWS SQS/SNS architecture, improving loyalty microservice throughput and reliability.
+•	Integrated PredictSpring and Aptos POS, UA.com, OMS, SFSC, and SFCC across core commerce systems.
 •	On a separate commerce team, delivered Share & Transfer Cart end to end across the Next.js/React storefront and GraphQL APIs, including multi-region shared-cart and email flows.
-•	Built and hardened commerce experiences including shoppable social content, checkout, returns, search tracking, and fulfillment notifications with comprehensive automated tests.
+•	Built and hardened shoppable social, checkout, returns, search, and fulfillment features, applying enterprise-approved GitHub Copilot agentic workflows to accelerate delivery, automated testing, and documentation.
+•	Redesigned order history and BOPIS store selection on the storefront, and restored Constructor.io search and browse attribution on the commerce GraphQL API.
 
 SOFTWARE ENGINEER III
-Notch Financial | 2022 - 2025
+Notch Financial | 2022 - Present
 •	 Led architecture and development of AP/AR platform, building Restful APIs and react apps with OCR capabilities.
 •	Designed and implemented payment systems with PDF invoice APIs, multi-provider integrations (Stripe, Adyen, Balance), and responsive customer/supplier portals.
 •	Built OCR bills editor with real-time collaboration and third-party financial integrations, streamlining validation workflows, in a react app, 
 •	Developed shared UI component library, reusable frontend/backend components, and migrated native apps to iOS/Android web app, improving scalability and time-to-market.
-•	Ensured quality through comprehensive unit testing and active participation across the full SDLC from discovery to deployment.
+•	Ensured quality through comprehensive unit testing and active participation across the full SDLC from discovery to deployment, using Claude Code and Native AI DLC.
+•	Hardened Adyen payouts against duplicate charges and extended invoice ingestion with deferred fees, OCR customer matching, and QuickBooks, Rutter, and Fidelio resync.
 •	Built/maintain cloud infrastructure using GCP services including Cloud Storage, Cloud Tasks, Cloud Run Jobs, Cloud functions, and Secret Manager with Docker and Kubernetes deployment.
 SOFTWARE ENGINEER
 Stackhawk | 2020 - 2021
